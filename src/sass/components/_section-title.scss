@@ -1,0 +1,17 @@
+.section-title {
+  font-family: var(--secondary-font);
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--accent-color);
+
+  @media screen and(min-width: $tablet) {
+    font-size: 48px;
+  }
+  @media screen and(min-width: $desktop) {
+    font-size: 58px;
+    line-height: 1.13;
+    letter-spacing: 0.06em;
+  }
+}

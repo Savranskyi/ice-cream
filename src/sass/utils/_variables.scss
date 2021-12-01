@@ -1,0 +1,27 @@
+:root {
+  // FONTS
+  --primary-font: 'DM Sans', sans-serif;
+  --secondary-font: 'Titan One', cursive;
+
+  // COLORS
+  // Цвет заголовков, ховеров, текста кнопок, иконок и телефона в футере.
+  --accent-color: #d41443;
+
+  // Цвет сабтайтлов и иконок в футере.
+  --subtitle-color: #ffa5ba;
+
+  // Цвет белого текста и бекраунда.
+  --white-color: #ffffff;
+
+  // Цвет черного текста
+  --black-color: #000000;
+
+  // Цвет описания и копирайта в футере
+  --description-color: #907e82;
+
+  // Бекграунд header, hero и колонки в products.
+  --primary-background-color: #ffb8ca;
+
+  // Бекграунд about, footer, и части contacts.
+  --secondary-background-color: #fff5f6;
+}
