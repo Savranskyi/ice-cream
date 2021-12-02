@@ -4,27 +4,150 @@
     align-items: $alI;
 }
 
-.page-header{
-    overflow: none;
-    position: relative;
-    min-height: 502px;
+.btn{
+    @include centrFlex();
+    font-size: 8px;
+    line-height: 1.25;
+    border-radius: 20px;
 
-    background-color: var(--primary-background-color);
+    @media screen and (min-width:$desktop) {
+    font-size: 14px;
+    line-height: 1.28;
+    }
 }
-.container-nav{
+
+.page-header{
+    overflow: hidden;
+    position: relative;
+    
+    background-color: var(--primary-background-color);
     @media screen and (max-width:$pre-tablet) {
-        padding-top: 6px;
-        padding-bottom: 137px;
+        min-height: 502px;
     }
 
     @media screen and (min-width:$tablet) {
-        padding-top: 38px;
-        padding-bottom: 15px;
+        min-height: 400px;
     }
 
     @media screen and (min-width:$desktop) {
-        padding-bottom: 84px;
+        min-height: 665px;
     } 
+}
+
+.logo{
+    @media screen and (max-width:$pre-tablet) {
+        margin-top: 6px;
+        margin-bottom: 137px;
+    }
+
+    @media screen and (min-width:$tablet) {
+        margin-top: 38px;
+        margin-bottom: 15px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        margin-bottom: 84px;
+    } 
+}
+
+// MENU-----menu
+.menu{
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    min-width: 250px;
+    height: 100vh;
+
+    padding: 60px 20px 0 20px;
+
+    background-color: rgba(225, 121, 146, 1);
+    filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+    
+    transform: translateX(100%);
+    transition: transform 250ms linear ;   
+} 
+
+.menu.is-hidden{
+    transform: translateX(0)
+}
+
+.menu.is-hidden .btn-menu--close{
+    display: block;
+    
+}
+
+.menu .btn-menu--close{
+    display: none;
+}
+
+.menu.is-hidden .btn-menu{
+    display: none;
+}
+
+.btn-menu{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+
+    @media screen and (max-width:$pre-tablet){
+    top: 19px;
+    right: 20px;
+    }
+}
+
+.icon-btn-menu{
+    width: 20px;
+    height: 12px;
+}
+
+.btn-menu--close{
+    position: absolute;
+    top: 24px;
+    right: 28px;
+    line-height: 0;
+    background-color: transparent;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.icon-btn-menu--close{
+    width: 14px;
+    height: 14px;
+    fill: var(--white-color);
+}
+
+.btn-buy{
+    width: 209px;
+    height: 44px;
+    color: var(--accent-color);
+    background-color: var(--white-color); 
+    font-weight: 700;
+    font-size: 13px;
+    margin-bottom: 19px;
+
+}
+.icon-btn-buy{
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(90deg);
+    fill: var(--accent-color);
+    stroke:var(--accent-color);
+    stroke-width: 1px;
+}
+
+.nav__link{
+    padding: 13px 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--white-color);
+    border-top: 1px solid #E18298;
+
+    &:hover,
+    &:focus{
+    color: var(--accent-color);
+    }
 }
 
 // TITLE H1----
@@ -69,17 +192,6 @@
 }
 
 //---- BTN-----
-.btn{
-    @include centrFlex();
-    font-size: 8px;
-    line-height: 1.25;
-    border-radius: 20px;
-
-    @media screen and (min-width:$desktop) {
-    font-size: 14px;
-    line-height: 1.28;
-    }
-}
 
 .title-btn--red{
     height: 24px;
@@ -119,22 +231,51 @@
 
 .icecream{
     bottom: 0;
-    right: 32px;
     position: absolute;
     z-index: 1;
+    @media screen and (max-width:$pre-tablet) {
+        right: 32px;
+    }
+    @media screen and (min-width:$tablet) {
+        right: 247px;
+    }
+    @media screen and (min-width:$desktop) {
+        right: 450px;
+    }
 }
 
 .icecream::after{
     position: absolute;
     top: -9px;
-    left: -50%;
+    left: -52%;
     z-index: -1;
     display: block;
     content: '';
-    width: 346px;
-    height: 344px;
+    
     background-color: rgba(255, 165, 186, 1);
     border-radius: 50%;
+
+    @media screen and (max-width:$pre-tablet) {
+        top: -9px;
+        left: -52%;
+
+        min-width: 346px;
+        height: 344px;
+    }
+    @media screen and (min-width:$tablet) {
+        top: -32px;
+        left: -51%;
+        
+        width: 324px;
+        height: 322px;
+    }
+    @media screen and (min-width:$desktop) {
+        top: -56px;
+        left: -51%;
+        
+        width: 538px;
+        height: 538px;
+    }
 }
 
 // INFO

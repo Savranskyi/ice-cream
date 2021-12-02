@@ -1,21 +1,59 @@
 <header class="page-header">
 
 <!-- NAV -->
-    <div class="container container-nav">
+    <div class="container">
         <a href="./index.html" class="logo">
 
             <img 
             srcset="./images/hero/logo.png 1x, ./images/hero/logo@2x.png 2x"
             src="./images/hero/logo.png" alt="icecrem">
         </a>
-        <!-- <nav class="nav-header">
 
-            <button class="btn-nav">
-                <svg class="icon-btn-nav">
+        <nav class="nav-header">
+
+            <button class="btn-menu" data-modal-open>
+                <svg class="icon-btn-menu">
                     <use href="#"></use>
                 </svg>
             </button>
-            <ul class="nav">
+            
+            <div class="menu" data-modal>
+                <button class="btn-menu--close" data-modal-close>
+                    <svg class="icon-btn-menu--close">
+                        <use href="./images/icons.svg#icon-x"></use>
+                    </svg>
+                </button>
+
+                <button 
+                 class="btn btn-buy" 
+                type="button">
+                Buy now
+                <svg class="icon-btn-buy">
+                    <use href="./images/icons.svg#icon-ctrl"></use>
+                </svg>
+            </button>
+                <ul class="nav-menu">
+
+                <li class="nav-menu__item">
+                    <a href="#" class="nav__link">Home</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a href="#" class="nav__link">About us</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a href="#" class="nav__link">How it's made?</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a href="#" class="nav__link">Our products</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a href="#" class="nav__link">Contact</a>
+                </li>
+            </ul>
+
+
+            </div>
+            <!-- <ul class="nav">
 
                 <li class="nav__item">
                     <a href="#" class="nav__link">Home</a>
@@ -32,9 +70,9 @@
                 <li class="nav__item">
                     <a href="#" class="nav__link">Contact</a>
                 </li>
-            </ul>
+            </ul> -->
         </nav>
-        <button 
+        <!-- <button 
         class="btn-buy" 
         type="button">
         <svg class="icon-btn-buy">
@@ -105,3 +143,5 @@
      </div> 
     </section>
 </header>
+<script src="./js/mobile-menu.js"></script>
+<script src="./js/modal.js"></script>
