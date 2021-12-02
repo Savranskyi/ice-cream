@@ -1,7 +1,12 @@
 <header class="page-header">
+
+<!-- NAV -->
     <div class="container container-nav">
         <a href="./index.html" class="logo">
-            <img src="./images/hero/logo.png" alt="icecrem">
+
+            <img 
+            srcset="./images/hero/logo.png 1x, ./images/hero/logo@2x.png 2x"
+            src="./images/hero/logo.png" alt="icecrem">
         </a>
         <!-- <nav class="nav-header">
 
@@ -38,13 +43,20 @@
         Buy now</button> -->
     </div>
 
-
     <section class="hero">
+
+<!-- TITLE H1 -->
         <div class="container">
-                <h1 class="section-subtitle hero-title">ice cream<br>
-                    made with<br>
-                    <span class="section-title">passion</span>
-                </h1>
+                <div class="wparrer-title">
+                    <h1 class="section-subtitle hero-title">ice cream<br>
+                        made with<br>
+                        <span class="section-title">passion</span>
+                    </h1>
+                </div>
+<!-- END TITLE H1 -->
+
+
+<!-- TITLE BTN -->
             <ul class="title-btn">
                 <li class="title-btn__item">
                     <a href="#" class="btn title-btn--red">Products</a>
@@ -53,8 +65,24 @@
                     <a href="#" class="btn title-btn--white">How it's made?</a>
                 </li>
             </ul>
-          
-        <img src="#" alt="icecream">
+
+        <picture class="icecream">
+            <source media="(min-width: 1280px)" srcset="./images/hero/slider-desktop.webp 1x, ./images/hero/slider-desktop@2x.webp 2x" type="image/webp">
+
+            <source media="(min-width: 1280px)" srcset="./images/hero/slider-desktop.png 1x, ./images/hero/slider-desktop@2x.png 2x" type="image/png">
+
+            <source media="(min-width: 768px)" srcset="./images/hero/slider-tablet.webp 1x, ./images/hero/slider-tablet@2x.webp 2x" type="image/webp">
+
+            <source media="(min-width: 768px)" srcset="./images/hero/slider-tablet.png 1x, ./images/hero/slider-tablet@2x.png 2x" type="image/png">
+
+            <source srcset="./images/hero/slider-mobile.webp 1x, ./images/hero/slider-mobile@2x.webp 2x" type="image/webp">
+
+            <source srcset="./images/hero/slider-mobile.png 1x, ./images/hero/slider-mobile@2x.png 2x" type="image/png">
+
+            <img src="./images/hero/slider-mobile.png" alt="icecream">
+        </picture>  
+        
+
         <ul class="info">
             <li class="info__item">
                 <h2 class="info__title">
@@ -69,11 +97,11 @@
                 <p class="info__text">food trucks</p>
             </li>
         </ul>
-        <div class="wrapper">
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+        <div class="wrapper-text--milk">
+            <p class="text--milk">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
             <button class="btn-form" type="button"></button>
         </div>
-        <img src="#" alt="so tasty">
+        <img class="tatsy" src="#" alt="so tasty">
      </div> 
     </section>
 </header>
