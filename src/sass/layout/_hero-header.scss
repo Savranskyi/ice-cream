@@ -1,4 +1,72 @@
-button{
-    border: none;
-    padding: none;
+@mixin centrFlex ($flex: flex, $justC:center, $alI:center){
+    display: $flex;
+    justify-content: $justC;
+    align-items: $alI;
+}
+
+.page-header{
+    background-color: var(--primary-background-color);
+}
+.container-nav{
+    @media screen and (max-width:$pre-tablet) {
+        padding-top: 6px;
+        padding-bottom: 137px;
+    }
+
+    @media screen and (min-width:$tablet) {
+        padding-top: 38px;
+        padding-bottom: 15px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        padding-bottom: 84px;
+    } 
+}
+
+.hero .hero-title{
+    color: var(--white-color);
+    font-weight: 400;
+    text-align: left;
+    }
+
+.title-btn{
+    display: flex;
+
+}
+
+// BTN
+.btn{
+    @include centrFlex();
+    font-size: 8px;
+    line-height: 1.25;
+    border-radius: 20px;
+
+    @media screen and (min-width:$desktop) {
+    font-size: 14px;
+    line-height: 1.28;
+    }
+}
+
+.title-btn--red{
+    height: 24px;
+    width: 63px;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+
+    @media screen and (min-width:$desktop){
+    height: 40px;
+    width: 104px;
+    }
+}
+
+.title-btn--white{
+    height: 24px;
+    width: 82px;
+    color: var(--accent-color);
+    background-color: var(--white-color);
+
+    @media screen and (min-width:$desktop){
+    height: 40px;
+    width: 138px;
+    }
 }
