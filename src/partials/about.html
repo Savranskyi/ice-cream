@@ -1,21 +1,24 @@
-<section class="section about" id="about">
+<section class="about" id="about">
   <div class="container">
     <p class="section-subtitle">tradition and love</p>
     <h2 class="section-title about__title">how it’s made?</h2>
     <div class="about__box">
-
       <div class="about__thumb">
         <picture class="about__picture">
           <source
-            media="(max-width: 767px)"
-            srcset="./images/about/home-pic4.webp 1x, 
-            ./images/about/home-pic4@2x.webp 2x"
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/about/home-pic4-desktop.webp    1x,
+              ./images/about/home-pic4-desktop@2x.webp 2x
+            "
             type="image/webp"
           />
           <source
-            media="(max-width: 767px)"
-            srcset="./images/about/home-pic4.png 1x, 
-            ./images/about/home-pic4@2x.png 2x"
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/about/home-pic4-desktop.png    1x,
+              ./images/about/home-pic4-desktop@2x.png 2x
+            "
             type="image/png"
           />
 
@@ -37,19 +40,13 @@
           />
 
           <source
-            media="(min-width: 1200px)"
-            srcset="
-              ./images/about/home-pic4-desktop.webp    1x,
-              ./images/about/home-pic4-desktop@2x.webp 2x
-            "
+            media="(max-width: 767px)"
+            srcset="./images/about/home-pic4.webp 1x, ./images/about/home-pic4@2x.webp 2x"
             type="image/webp"
           />
           <source
-            media="(min-width: 1200px)"
-            srcset="
-              ./images/about/home-pic4-desktop.png    1x,
-              ./images/about/home-pic4-desktop@2x.png 2x
-            "
+            media="(max-width: 767px)"
+            srcset="./images/about/home-pic4.png 1x, ./images/about/home-pic4@2x.png 2x"
             type="image/png"
           />
 
@@ -69,12 +66,12 @@
         </p>
         <p class="about__text about__text--light">Aliquam erat volutpat. Aenean accumsan.</p>
 
-        <button>
+        <!-- <button>
           <span>Read more</span>
           <svg class="burger-btn__icon">
-            <use href="#"></use>
+            <use href="../images/about/readmore.svg"></use>
           </svg>
-        </button>
+        </button> -->
       </div>
     </div>
   </div>
