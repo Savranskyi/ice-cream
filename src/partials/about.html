@@ -1,26 +1,72 @@
-<section class="section about">
+<section class="section about" id="about">
   <div class="container">
     <p class="section-subtitle">tradition and love</p>
-    <h2 class="about__title section-title">how it’s made?</h2>
+    <h2 class="section-title">how it’s made?</h2>
     <div class="about__box">
-      <picture>
-        <source />
-      </picture>
-      <div>
-        <p>
+      <div class="about__picture">
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="./images/about/home-pic4.webp 1x, ./images/about/home-pic4@2x.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="./images/about/home-pic4.png 1x, ./images/about/home-pic4@2x.png 2x"
+          />
+
+          <source
+            media="(max-width: 1199px)"
+            srcset="
+              ./images/about/home-pic4-tablet.webp    1x,
+              ./images/about/home-pic4-tablet@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 1199px)"
+            srcset="
+              ./images/about/home-pic4-tablet.png    1x,
+              ./images/about/home-pic4-tablet@2x.png 2x
+            "
+          />
+
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/about/home-pic4-desktop.webp    1x,
+              ./images/about/home-pic4-desktop@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/about/home-pic4-desktop.png    1x,
+              ./images/about/home-pic4-desktop@2x.png 2x
+            "
+          />
+
+          <img src="#" alt="cow with milk" />
+        </picture>
+      </div>
+
+      <div class="about__text-box">
+        <p class="about__text">
           Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
           lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
         </p>
-        <p>
+        <p class="about__text about__text--light">
           Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
           in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
           maximus. Cras massa nibh, tincidunt.
         </p>
-        <p>Aliquam erat volutpat. Aenean accumsan.</p>
+        <p class="about__text about__text--light">Aliquam erat volutpat. Aenean accumsan.</p>
+
         <button>
           <span>Read more</span>
           <svg class="burger-btn__icon">
-            <use href="./images/"></use>
+            <use href="#"></use>
           </svg>
         </button>
       </div>
