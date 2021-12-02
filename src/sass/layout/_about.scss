@@ -9,10 +9,17 @@
     background-repeat: no-repeat;
     background-position: 0 75%;
 
-    // для Retina экранов:
+    // ====== для Retina экранов:
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/about/about-bg-mobile@2x.png);
     }
+  }
+
+  // ======для десктопа
+  @media screen and (min-width: $desktop) {
+    background-image: url(../images/about/about-bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: 0 75%;
   }
 
   @media screen and (min-width: $tablet) {
