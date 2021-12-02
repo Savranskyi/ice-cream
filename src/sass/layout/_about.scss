@@ -3,22 +3,44 @@
   padding-bottom: 20px;
   background-color: var(--secondary-background-color);
   background-size: 100%;
-  background-image: url(../images/about/about-bg-mobile.png);
-  background-repeat: no-repeat;
-  background-position: 0 75%;
 
-  // @media screen and (max-width: 767px)
+  @media screen and (max-width: $pre-tablet) {
+    background-image: url(../images/about/about-bg-mobile.png);
+    background-repeat: no-repeat;
+    background-position: 0 75%;
+
+    // для Retina экранов:
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about/about-bg-mobile@2x.png);
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 130px;
+  }
+}
+.about__box {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+.about__text-box {
+  padding: 0 30px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 60px 0 0 15px;
+  }
 }
 
-.about__text-box{
-    padding: 0 30px;
+.about__thumb {
+  @media screen and (max-width: $pre-tablet) {
+    margin-bottom: 45px;
+  }
 }
-
 .about__picture {
-  margin-bottom: 45px;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
+  @media screen and (min-width: $tablet) {
+    max-width: 340px;
+  }
 }
 
 .about__text {
@@ -37,4 +59,12 @@
 }
 .about__text--light {
   color: var(--description-color);
+}
+
+.about__title {
+  margin-bottom: 25px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 50px;
+  }
 }
