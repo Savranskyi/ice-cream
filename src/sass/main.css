@@ -1,0 +1,158 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+:root {
+  --primary-font: 'DM Sans', sans-serif;
+  --secondary-font: 'Titan One', cursive;
+  --accent-color: #d41443;
+  --subtitle-color: #ffa5ba;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --description-color: #907e82;
+  --primary-background-color: #ffb8ca;
+  --secondary-background-color: #fff5f6;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primary-font);
+  letter-spacing: 0.04em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.container {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 34px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding: 0 115px;
+  }
+}
+
+button {
+  border: none;
+  padding: none;
+}
+
+.section-title {
+  font-family: var(--secondary-font);
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 58px;
+    line-height: 1.13;
+    letter-spacing: 0.06em;
+  }
+}
+
+.section-subtitle {
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--subtitle-color);
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-subtitle {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-subtitle {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
