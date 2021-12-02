@@ -62,3 +62,6 @@
 }
 .contact__tel {
 }
+.contact + .contact__item {
+  display: flex;
+}
