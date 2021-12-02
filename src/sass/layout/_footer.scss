@@ -1,25 +1,3 @@
-.container {
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    padding: 0 34px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-    padding: 0 115px;
-  }
-}
-.section {
-}
-
 .btn-item {
   display: flex;
   align-items: center;
@@ -36,10 +14,6 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social {
-}
-.social__item {
-}
 .social__link {
   color: var(--subtitle-color);
   width: 100%;
@@ -57,11 +31,4 @@
     color: var(--white-color);
     background-color: var(--accent-color);
   }
-}
-.contact {
-}
-.contact__tel {
-}
-.contact + .contact__item {
-  display: flex;
 }
