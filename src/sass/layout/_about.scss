@@ -7,7 +7,7 @@
   @media screen and (max-width: $pre-tablet) {
     background-image: url(../images/about/about-bg-mobile.png);
     background-repeat: no-repeat;
-    background-position: 0 75%;
+    background-position: bottom;
 
     // ====== для Retina экранов:
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -19,7 +19,7 @@
   @media screen and (min-width: $desktop) {
     background-image: url(../images/about/about-bg-desktop.png);
     background-repeat: no-repeat;
-    background-position: 0 75%;
+    background-position: bottom;
   }
 
   @media screen and (min-width: $tablet) {
@@ -38,6 +38,8 @@
 .about__box {
   @media screen and (min-width: $tablet) {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 .about__thumb {
@@ -49,6 +51,9 @@
   @media screen and (min-width: $tablet) {
     max-width: 340px;
   }
+  // & img{
+  //   max-width: none;
+  // }
 }
 
 // ===========контейнер с текстом
@@ -56,7 +61,12 @@
   padding: 0 30px;
 
   @media screen and (min-width: $tablet) {
-    padding: 60px 0 0 15px;
+    padding: 0;
+    width: 340px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-left: 70px;
+    width: 463px;
   }
 }
 .about__text {
