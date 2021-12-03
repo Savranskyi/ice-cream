@@ -1,6 +1,12 @@
 .footer {
   background: #fff5f6;
-  height: 1022px;
+  height: 1912px;
+  @media screen and (min-width: 768px) {
+    height: 1103px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: ;
+  }
 }
 .btn-item {
   display: flex;
