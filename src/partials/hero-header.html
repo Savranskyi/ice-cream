@@ -1,6 +1,10 @@
 <header class="page-header">
 
 <!-- NAV -->
+    <!-- <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div> -->
     <div class="container containet-nav">
         <a href="./index.html" class="logo">
 
@@ -56,15 +60,15 @@
     
                     <ul class="info">
                         <li class="info__item">
-                            <h2 class="info__title">
+                            <p class="info__title">
                                 16
-                            </h2>
+                            </p>
                             <p class="info__text">cafes</p>
                         </li>
                         <li class="info__item">
-                            <h2 class="info__title">
+                            <p class="info__title">
                                 23
-                            </h2>
+                            </p>
                             <p class="info__text">food trucks</p>
                         </li>
                     </ul>
@@ -100,11 +104,39 @@
         
 
         
-        <div class="wrapper-text--milk">
-            <p class="text--milk">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-            <button class="btn-form" type="button"></button>
+        <div class="wrapper-milk">
+            <picture>
+                <source media="(min-width:1280px)" srcset="./images/hero/milk-desktop.webp 1x, ./images/hero/milk-desktop@2x.webp 2x" type="image/webp">
+
+                <source media="(min-width:1280px)" srcset="./images/hero/milk-desktop.png 1x, ./images/hero/milk-desktop@2x.png 2x" type="image/png">
+
+                <source srcset="./images/hero/milk-tablet.webp 1x, ./images/hero/milk-tablet@2x.webp 2x" type="image/webp">
+
+                <source srcset="./images/hero/milk-tablet.png 1x, ./images/hero/milk-tablet@2x.png 2x" type="image/png">
+
+                <img src="./images/hero/milk-tablet.png" alt="eco milk">
+            </picture>
+            <div class="wrapper-milk__text">
+                <p class="text-milk">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+            <button class="btn-form" type="button">
+                <svg class="icon-btn-form">
+                    <use href="./images/icons.svg#icon-arrow-right"></use>
+                </svg>
+            </button>
+            </div>
         </div>
-        <img class="tatsy" src="#" alt="so tasty">
+       
+        <picture >
+            <source media="(min-width: 1280px)" srcset="./images/hero/tasty-desktop.webp 1x, ./images/hero/tasty-desktop@2x.webp 2x" type="image/webp">
+
+            <source media="(min-width: 1280px)" srcset="./images/hero/tasty-desktop.png 1x, ./images/hero/tasty-desktop@2x.png 2x" type="image/png">
+
+            <source srcset="./images/hero/tasty-tablet.webp 1x, ./images/hero/tasty-tablet@2x.webp 2x" type="image/webp">
+
+            <source srcset="./images/hero/tasty-tablet.png 1x, ./images/hero/tasty-tablet@2x.png 2x" type="image/png">
+
+            <img class="tasty" src="./images/hero/tasty-tablet.png" alt="so tasty">
+        </picture>
      </div> 
     </section>
 

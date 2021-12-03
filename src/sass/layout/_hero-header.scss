@@ -4,6 +4,37 @@
     align-items: $alI;
 }
 
+.box1 {
+    height: 31px;
+    width: 100%;
+    background-color: teal;
+}
+.box2 {
+    width: 137px;
+    height: 100%;
+    background-color: #E18298;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.box3 {
+    width: 100%;
+    height: 46px;
+    background-color: bisque;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+.box4 {
+    width: 307px;
+    height: 100%;
+    background-color: #4e3b3f;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .btn{
     @include centrFlex();
     font-size: 8px;
@@ -62,7 +93,7 @@
 
     @media screen and (min-width:$tablet) {
     z-index: 5;
-    display: block;
+    display: flex;
     width: 160px;
     height: 44px;
 
@@ -75,7 +106,7 @@
 }
 
 .icon-btn-buy{
-    margin-left: 10px;
+    // margin-left: 10px;
     width: 20px;
     height: 20px;
 
@@ -136,7 +167,32 @@
     color: var(--white-color);
     font-weight: 400;
     text-align: left;
-    }
+    margin-bottom: 0;
+
+    @media screen and (min-width:$tablet) {
+        font-size: 22px;
+        line-height: 1.05;
+        letter-spacing: 0.03em;
+    } 
+    @media screen and (min-width:$desktop) {
+        font-size: 38px;
+        line-height: 1.15;
+        letter-spacing: 0.04em;
+    } 
+}
+
+.hero .section-title{
+    @media screen and (min-width:$tablet) {
+        font-size: 34px;
+        line-height: 0.8;
+        letter-spacing: 0.04em;
+    } 
+    @media screen and (min-width:$desktop) {
+        font-size: 58px;
+        line-height: 0.9;
+        letter-spacing: 0.04em;
+    } 
+}
 
 .title-btn{
     display: flex;
@@ -144,6 +200,13 @@
     position: relative;
     z-index: 2;
     }
+    @media screen and (min-width:$tablet) {
+        margin-bottom: 20px;
+    } 
+    @media screen and (min-width:$desktop) {
+        margin-bottom: 56px;
+    } 
+
 }
 
 .title-btn__item:not(:last-child){
@@ -200,7 +263,7 @@
         right: 32px;
     }
     @media screen and (min-width:$tablet) {
-        right: calc(50% - 137px);
+        right: calc(50% - 139px);
     }
     @media screen and (min-width:$desktop) {
         right: 450px;
@@ -243,7 +306,7 @@
 
 // INFO
 .wrepper--h1-info{
-   padding-top: 15px;
+   margin-top: 15px;
     display: flex;
     justify-content: space-between;
 }
@@ -288,8 +351,6 @@
 
     display: block;
     content: '';
-    width: 16px;
-    height: 16px;
     border-radius: 50%;
     background-color: var(--white-color);
     @media screen and(min-width: $tablet) {
@@ -317,16 +378,60 @@
 }
 
 // MILK
-.wrapper-text--milk{
+.wrapper-milk{
     @media screen and (max-width:$pre-tablet){
         display: none;
     }
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    
+    @media screen and (max-width:$pre-desktop){
+        margin-bottom: 28px;
+    }
 }
 
-// TATSY
-.tatsy{
+.wrapper-milk__text{
+    width: 114px;
+}
+
+.text-milk{
+    font-size: 8px;
+    letter-spacing: initial;
+    line-height: 1.5;
+    color: var(--white-color);
+    margin-bottom: 7px;
+}
+
+.btn-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+}
+
+.icon-btn-form{
+    width: 5px;
+    height: 4px;
+    fill: var(--accent-color);
+}
+
+// tasty
+.tasty{
+    position: absolute;
+    z-index: 6;
+    bottom: 0;
+    right: calc(50% - 349px);
+
+
     @media screen and (max-width:$pre-tablet){
         display: none;
+    }
+    @media screen and (min-width:$desktop){
+        right: calc(50% - 299px);
     }
 }
 
@@ -334,7 +439,7 @@
 
 .menu{
     position: absolute;
-    z-index: 5;
+    z-index: 7;
     top: 0;
     right: 0;
     min-width: 250px;
@@ -392,25 +497,27 @@
 .btn-menu--span{
     display: block;
     width: 20px;
-    height: 2px;
-    background-color: var(--accent-color);
+    height: 0px;
+    border: 1px solid var(--accent-color);
     &::after{
         position: absolute;
         bottom: 6px;
+        left: 0;
         content: "";
         display: block;
         width: 20px;
-        height: 2px;
-        background-color: var(--accent-color);
+        height: 0px;
+        border: 1px solid var(--accent-color);
     }
     &::before{
         position: absolute;
         top: 6px;
+        left: 0;
         content: "";
         display: block;
         width: 20px;
-        height: 2px;
-        background-color: var(--accent-color);
+        height: 0px;
+        border: 1px solid var(--accent-color);
     }
 }
 
