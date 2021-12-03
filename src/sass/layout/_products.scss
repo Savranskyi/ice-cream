@@ -1,25 +1,95 @@
-product__title {
-  font-family: Titan One;
-  font-weight: 400;
-  font-size: 58px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+.products {
+  padding-top: 121px;
+  padding-bottom: 98px;
+  background-color: var(--background-grey);
+  background-size: 100%;
 
-  color: #d41443;
+  @media screen and (max-width: $pre-tablet) {
+  }
 }
 
-.product__pretitle {
-  font-family: Titan One;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 1.33;
-  text-align: center;
-  -spacing: 0.04em;
-  text-transform: uppercase;
-
-  color: #d41443;
-
+.products__subtitle-first {
   margin-bottom: 15px;
+}
+
+.products__title {
+  margin-bottom: 144px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 39px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 49px;
+  }
+}
+
+.products__subtitle {
+  font-family: var(--secondary-font);
+  font-size: 20px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 30px;
+
+  @media screen and(min-width: $desktop) {
+    font-size: 30px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+  }
+}
+
+.products_list {
+  @media screen and(min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.products_item {
+  padding-top: 161px;
+  padding-bottom: 41px;
+  margin-bottom: 130px;
+  border-radius: 24px;
+
+  @media screen and(min-width: $tablet) {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  @media screen and(min-width: $desktop) {
+    &:not(:last-child) {
+      margin-right: 29px;
+    }
+  }
+}
+
+.item-first {
+  background-color: var(--primary-background-color);
+}
+
+.item-second {
+  background-color: var(--background-beige);
+}
+
+.item-third {
+  background-color: var(--background-green);
+}
+
+.product__subtitle {
+  margin-bottom: 30px;
+}
+
+.product__text {
+  font-family: var(--primary-font);
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--white-color);
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-bottom: 30px;
 }
