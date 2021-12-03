@@ -1,36 +1,68 @@
 .footer {
   background: #fff5f6;
-  height: 1022px;
+
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1280px) {
+  }
 }
-.btn-item {
+.footer__list {
   display: flex;
-  align-items: center;
-  width: 176px;
-  height: 44px;
-  padding: 10px 22px;
-  border-radius: 22px;
-  color: var(--accent-color);
-  background-color: var(--white-color);
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  justify-content: right;
+  flex-direction: column;
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+  }
 }
+.footer__subtitle {
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+  margin-top: 113px;
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    display: flex;
+  }
+}
+.footer__title {
+  font-size: 34px;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 43px;
+}
+.footer__buttom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 14px;
+  margin-top: 32px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  color: #907e82;
+  border-top: 1px solid #e1e1e1;
+}
+
 .social {
   display: flex;
   justify-content: right;
+  margin-top: 43px;
+  margin-right: 20px;
 }
 .social__link {
   color: var(--subtitle-color);
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   background: var(--white-color);
   border-radius: 50%;
+  margin-left: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   fill: currentColor;
+  fill: #fff5f6;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms (0.4, 0, 0.2, 1);
   &:hover,
@@ -39,4 +71,29 @@
     color: var(--white-color);
     background-color: var(--accent-color);
   }
+}
+.social__icon {
+  justify-content: center;
+  align-content: center;
+  fill: currentColor;
+}
+.sotial__item {
+  width: 34px;
+  height: 34px;
+  margin-right: 30px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.contact__tel {
+  display: flex;
+  justify-content: center;
+  margin-top: 46px;
+  color: var(--accent-color);
+}
+.spn {
+  color: black;
+  padding-right: 10px;
 }
