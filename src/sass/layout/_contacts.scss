@@ -1,0 +1,151 @@
+.contacts {
+}
+.contacts_list {
+  display: block;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+.contacts_item {
+  width: 220px;
+  background-color: var(--white-color);
+
+  @media screen and (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    width: 330px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+.contacts_container {
+  padding: 43px 20px;
+  border-radius: 24px;
+  border: 1px solid #e1e1e1;
+  @media screen and (min-width: $tablet) {
+    padding: 50px 32px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 50px 44px 62px 44px;
+  }
+}
+.contacts_title {
+  width: 80px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  background-color: var(--background-beige);
+  margin-bottom: 25px;
+  border-radius: 4px;
+  @media screen and (min-width: $tablet) {
+    width: 73px;
+    font-size: 16px;
+    line-height: 1.87;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 32px;
+  }
+}
+.contacts_title--green {
+  background-color: var(--background-green);
+  width: 130px;
+  border-radius: 4px;
+  @media screen and (min-width: $tablet) {
+    width: 138px;
+  }
+}
+.contacts_address--wrap {
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 64px;
+  }
+}
+.contacts_address {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: var(--black-color);
+  margin-bottom: 10px;
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.87;
+  }
+}
+.contacts_text,
+.connect_link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--description-color);
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.64;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.81;
+  }
+}
+.contacts_text {
+}
+.contacts_list-schedule {
+  margin-bottom: 50px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 64px;
+  }
+}
+.contacts_item-schedule {
+}
+.contacts_text--days {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: var(--black-color);
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.87;
+  }
+}
+.contacts_text--time {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: var(--subtitle-color);
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.87;
+  }
+}
+.contacts_list-connect {
+}
+.list-connect_item {
+}
