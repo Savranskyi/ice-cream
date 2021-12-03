@@ -16,7 +16,8 @@
   --background-beige: #f0d1a5;
   --background-green: #c2e297;
   /*#region -----reviews----- #*/
-  --dots-three: #c7133e;
+  --dots-three-color: #c7133e;
+  --underline-text-color: #e1e1e1;
   /*#endregion #*/
   --transition-duration: 250ms;
   --transition-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -678,19 +679,56 @@ button {
 
 //id
 #slider {
+}*/
+.slider__item {
+  padding: 40px 50px 30px;
 }
 
-.slider__item {
-}
 .slider__img {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 60px;
 }
+
 .slider__text {
-}*/
+  position: relative;
+  margin-bottom: 50px;
+  padding: 0 5px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(31 / 12);
+  text-align: center;
+  color: var(--black-color);
+}
+
+.slider__text:nth-child(2) {
+  background-image: repeating-linear-gradient(to bottom, var(--underline-text-color), var(--underline-text-color) 1px, transparent 1px, transparent 30px);
+}
+
+.slider__text::before {
+  z-index: -1;
+  position: absolute;
+  top: -7px;
+  left: 20px;
+  content: '';
+  width: 54px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-image: url(/images/reviews/quotes_w54h40.svg);
+  fill: var(--underline-text-color);
+}
+
 /*#region -----dots-three----- #*/
 .dots-three {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
 }
 
 .dots-three__item {
@@ -698,7 +736,7 @@ button {
   height: 4px;
   border: none;
   border-radius: 50%;
-  background-color: var(--dots-three);
+  background-color: var(--dots-three-color);
 }
 
 .dots-three__item:not(:last-child) {
@@ -706,10 +744,17 @@ button {
 }
 
 /*#endregion #*/
-/*
 .slider__title {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(26 / 14);
+  text-align: center;
+  color: var(--black-color);
 }
 
+/*
 //id
 #left {
 }

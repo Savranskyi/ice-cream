@@ -11,18 +11,61 @@
 
 //id
 #slider {
-}
+}*/
 
 .slider__item {
+  padding: 40px 50px 30px;
+  
 }
 .slider__img {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 60px;
 }
+
 .slider__text {
-}*/
+  position: relative;
+
+  margin-bottom: 50px;
+  padding: 0 5px;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(31 / 12);
+  text-align: center;
+
+  color: var(--black-color);
+
+  &:nth-child(2) {
+    background-image: repeating-linear-gradient(
+      to bottom,
+      var(--underline-text-color),
+      var(--underline-text-color) 1px,
+      transparent 1px,
+      transparent 30px
+    );
+  }
+  &::before {
+    z-index: -1;
+    position: absolute;
+    top: -7px;
+    left: 20px;
+
+    content: '';
+    width: 54px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-image: url(/images/reviews/quotes_w54h40.svg);
+    fill: var(--underline-text-color);
+}
 
 /*#region -----dots-three----- #*/
 .dots-three {
   display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 .dots-three__item {
   width: 4px;
@@ -30,7 +73,7 @@
 
   border: none;
   border-radius: 50%;
-  background-color: var(--dots-three);
+  background-color: var(--dots-three-color);
 
   &:not(:last-child) {
     margin-right: 10px;
@@ -38,10 +81,16 @@
 }
 /*#endregion #*/
 
-/*
 .slider__title {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(26 / 14);
+  text-align: center;
+  color: var(--black-color);
 }
-
+/*
 //id
 #left {
 }
