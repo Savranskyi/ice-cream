@@ -1,7 +1,7 @@
 <header class="page-header">
 
 <!-- NAV -->
-    <div class="container">
+    <div class="container containet-nav">
         <a href="./index.html" class="logo">
 
             <img 
@@ -10,86 +10,64 @@
         </a>
 
         <nav class="nav-header">
+            <ul class="nav">
 
-            <button class="btn-menu" data-menu-open>
-                <svg class="icon-btn-menu">
-                    <use href="#"></use>
-                </svg>
-            </button>
-            
-            <div class="menu is-hidden" data-menu>
-                <button class="btn-menu--close" data-menu-close>
-                    <svg class="icon-btn-menu--close">
-                        <use href="./images/icons.svg#icon-x"></use>
-                    </svg>
-                </button>
-
-                <button 
-                 class="btn btn-buy" 
-                type="button">
-                Buy now
-                <svg class="icon-btn-buy">
-                    <use href="./images/icons.svg#icon-ctrl"></use>
-                </svg>
-            </button>
-                <ul class="nav-menu">
-
-                <li class="nav-menu__item">
+                <li class="nav__item">
                     <a href="#" class="nav__link">Home</a>
                 </li>
-                <li class="nav-menu__item">
+                <li class="nav__item">
                     <a href="#" class="nav__link">About us</a>
                 </li>
-                <li class="nav-menu__item">
+                <li class="nav__item">
                     <a href="#" class="nav__link">How it's made?</a>
                 </li>
-                <li class="nav-menu__item">
+                <li class="nav__item">
                     <a href="#" class="nav__link">Our products</a>
                 </li>
-                <li class="nav-menu__item">
+                <li class="nav__item">
                     <a href="#" class="nav__link">Contact</a>
                 </li>
             </ul>
-
-
-            </div>
-            <!-- <ul class="nav">
-
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Home</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">About us</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">How it's made?</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Our products</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Contact</a>
-                </li>
-            </ul> -->
+           
         </nav>
-        <!-- <button 
-        class="btn-buy" 
-        type="button">
-        <svg class="icon-btn-buy">
-            <use href=""></use>
-        </svg>
-        Buy now</button> -->
+        <button 
+            class="btn btn-buy--hero" 
+            type="button">
+            Buy now
+            <svg class="icon-btn-buy">
+            <use href="./images/icons.svg#icon-ctrl">
+
+            </use>
+            </svg>
+         </button>
     </div>
 
     <section class="hero">
 
 <!-- TITLE H1 -->
         <div class="container">
-                <div class="wparrer-title">
-                    <h1 class="section-subtitle hero-title">ice cream<br>
-                        made with<br>
-                        <span class="section-title">passion</span>
-                    </h1>
+                <div class="wrepper--h1-info">
+                    <div class="wparrer-title">
+                        <h1 class="section-subtitle hero-title">ice cream<br>
+                            made with<br>
+                            <span class="section-title">passion</span>
+                        </h1>
+                    </div>
+    
+                    <ul class="info">
+                        <li class="info__item">
+                            <h2 class="info__title">
+                                16
+                            </h2>
+                            <p class="info__text">cafes</p>
+                        </li>
+                        <li class="info__item">
+                            <h2 class="info__title">
+                                23
+                            </h2>
+                            <p class="info__text">food trucks</p>
+                        </li>
+                    </ul>
                 </div>
 <!-- END TITLE H1 -->
 
@@ -121,20 +99,7 @@
         </picture>  
         
 
-        <ul class="info">
-            <li class="info__item">
-                <h2 class="info__title">
-                    16
-                </h2>
-                <p class="info__text">cafes</p>
-            </li>
-            <li class="info__item">
-                <h2 class="info__title">
-                    23
-                </h2>
-                <p class="info__text">food trucks</p>
-            </li>
-        </ul>
+        
         <div class="wrapper-text--milk">
             <p class="text--milk">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
             <button class="btn-form" type="button"></button>
@@ -142,5 +107,45 @@
         <img class="tatsy" src="#" alt="so tasty">
      </div> 
     </section>
+
+    <!-- MENU -->
+
+    <button class="btn-menu" data-menu-open>
+        <span class="btn-menu--span"></span>
+    </button>
+    
+    <div class="menu is-hidden" data-menu>
+        <button class="btn-menu--close" data-menu-close>
+            <svg class="icon-btn-menu--close">
+                <use href="./images/icons.svg#icon-x"></use>
+            </svg>
+        </button>
+
+        <button 
+         class="btn btn-buy" 
+        type="button">
+        Buy now
+        <svg class="icon-btn-buy">
+            <use href="./images/icons.svg#icon-ctrl"></use>
+        </svg>
+    </button>
+        <ul class="nav-menu">
+
+        <li class="nav-menu__item">
+            <a href="#" class="nav__link">Home</a>
+        </li>
+        <li class="nav-menu__item">
+            <a href="#" class="nav__link">About us</a>
+        </li>
+        <li class="nav-menu__item">
+            <a href="#" class="nav__link">How it's made?</a>
+        </li>
+        <li class="nav-menu__item">
+            <a href="#" class="nav__link">Our products</a>
+        </li>
+        <li class="nav-menu__item">
+            <a href="#" class="nav__link">Contact</a>
+        </li>
+    </ul>
+
 </header>
-<!-- <script src="./js/mobile-menu.js"></script> -->
