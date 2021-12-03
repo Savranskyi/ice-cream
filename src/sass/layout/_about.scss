@@ -113,7 +113,7 @@
   font-size: 16px;
   line-height: 1.31;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-duration) var(--transition-function);
 
   &:hover,
   &:focus {
@@ -138,7 +138,7 @@
   z-index: 10;
 
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--transition-duration) var(--transition-function);
 
   &.is-hidden {
     opacity: 0; /* скрывает backdrop */
@@ -160,7 +160,7 @@
   background-color: var(--secondary-background-color);
   border-radius: 10px;
 
-  transition: transorm 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--transition-duration) var(--transition-function);
   overflow: auto;
   z-index: 9;
 
@@ -208,7 +208,7 @@
   width: 12px;
   height: 12px;
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition-duration) var(--transition-function);
 
   &:hover {
     fill: var(--accent-color);
@@ -222,8 +222,8 @@
   margin-right: auto;
   color: var(--white-color);
   background-color: var(--accent-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-duration) var(--transition-function),
+    box-shadow var(--transition-duration) var(--transition-function), transform var(--transition-duration) var(--transition-function);
 
   &:hover,
   &:focus {
