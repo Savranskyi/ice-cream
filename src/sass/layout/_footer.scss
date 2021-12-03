@@ -32,6 +32,9 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 43px;
+  @media screen and (min-width: 1280px) {
+    font-size: 56px;
+  }
 }
 .footer__buttom {
   display: flex;
@@ -45,7 +48,7 @@
   border-top: 1px solid #e1e1e1;
 }
 
-.social {
+.social__list {
   display: flex;
   justify-content: right;
   margin-top: 43px;
@@ -73,7 +76,9 @@
   }
 }
 .social__icon {
-  justify-content: center;
+  width: 34px;
+  height: 34px;
+  justify-content: right;
   align-content: center;
   fill: currentColor;
 }
