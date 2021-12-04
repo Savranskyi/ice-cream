@@ -15,7 +15,7 @@ br {
   text-transform: uppercase;
   margin-bottom: 17px;
   padding-top: 113px;
-  text-align: left;
+
   @media screen and (min-width: $tablet) {
     display: flex;
   }
@@ -27,7 +27,7 @@ br {
   text-transform: uppercase;
   margin-bottom: 43px;
   word-break: break-all;
-  text-align: left;
+
   @media screen and (min-width: $tablet) {
     font-size: 48px;
     line-height: 1, 13;
@@ -38,7 +38,18 @@ br {
     line-height: 1, 14;
   }
 }
-
+.footer__buttom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 14px;
+  margin-top: 32px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  word-wrap: break-word;
+  color: #907e82;
+  border-top: 1px solid #e1e1e1;
+}
 .social {
   text-align: right;
 }
