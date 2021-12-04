@@ -2,10 +2,7 @@
 
 
     <!-- NAV -->
-        <!-- <div class="box1"></div>
-        <div class="box2"></div>
-        <div class="box3"></div>
-        <div class="box4"></div> -->
+ 
         <div class="container">
           <div class="wrapper-nav">
             <a href="./index.html" class="logo">
@@ -38,7 +35,7 @@
             </nav>
             
             <button 
-                class="btn btn-buy--hero" 
+                class="btn btn-buy--hero js-open-hero" 
                 type="button">
                 Buy now
                 <svg class="icon-btn-buy">
@@ -146,7 +143,7 @@
          </div> 
         </section>
     
-        <!-- MENU -->
+        <!-- MOBILE-MENU -->
     
         <button class="btn-menu" data-menu-open>
             <span class="btn-menu--span"></span>
@@ -158,6 +155,7 @@
                     <use href="./images/icons.svg#icon-x"></use>
                 </svg>
             </button>
+
             <button 
              class="btn btn-buy" 
             type="button">
@@ -184,7 +182,43 @@
                 <a href="#contacts" class="nav-menu__link">Contact</a>
             </li>
         </ul>
-    
+<!-- MOBiLE__HERO BUY__NOW --> 
     </header>
+<div class="mobile-hero js-hero-container">
+        <div class="hero-modal">
+            <button class="hero-modal--close js-close-hero" >
+                <svg class="icon-modal--close">
+                    <use href="./images/icons.svg#icon-x"></use>
+                </svg>
+            </button>
+
+            <p class="hero-modal__text section-subtitle">your dreams</p>
+            <h2 class="hero-modal__title section-title">come true here</h2>
+
+           <div class="icecream1">
+
+            <img class="img-icecream1" src="./images/hero/pic1-min.png" alt="ice cream">
+
+            <form class="hero-modal__form--name">
+                <label class="hero-modal__label--name" for="name">Name</label>
+                <select 
+                class="hero-modal__select--name"
+                id="name" 
+                name="name">
+                <option value="ic">ice cream</option>
+                <option value="if">ice coffee</option>
+                <option value="m" selected>milkshakes</option>
+                </select>           
+            </form>
+            
+            <form class="hero-modal__form--mail">
+                <label class="hero-modal__label--mail">
+                    Email
+                    <input class="hero-modal__input--mail" type="email" name="email" placeholder="example@mail.com">
+                    </label>    
+            </form>
+           </div>
+        </div>
+</div>    
     
 
