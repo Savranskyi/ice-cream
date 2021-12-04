@@ -93,17 +93,27 @@
 }
 
 .products_item::before {
-  content: '';
-  background-image: url('../images/products/ice-cream-mobile.png');
-  width: 249px;
-  height: 252px;
-  display: inline-block;
-  top: 0;
-  left: 20%;
-  color: transparent;
-  position: absolute;
-  z-index: 1;
-  transform: translateY(-113px);
+  @media screen and (max-width: $pre-tablet) {
+    content: '';
+    background-image: url('../images/products/ice-cream-mobile.png');
+    background-repeat: no-repeat;
+    width: 249px;
+    height: 252px;
+    top: 0;
+    left: 20%;
+    color: transparent;
+    position: absolute;
+    z-index: 1;
+    transform: translateY(-113px);
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/products/ice-cream-mobile@2x.png');
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-image: url('../images/products/ice-cream-tablet.png');
+  }
 }
 
 .item-first {
