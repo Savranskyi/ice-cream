@@ -468,13 +468,13 @@ button {
 
 @media screen and (min-width: 768px) {
   .products__title {
-    margin-bottom: 39px;
+    margin-bottom: 150px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .products__title {
-    margin-bottom: 49px;
+    margin-bottom: 259px;
   }
 }
 
@@ -507,14 +507,31 @@ button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-right: -20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .products_list {
+    margin-right: -30px;
   }
 }
 
 .products_item {
+  height: 485px;
   padding-top: 161px;
   padding-bottom: 41px;
-  margin-bottom: 130px;
+  padding-right: 40px;
+  padding-left: 40px;
   border-radius: 24px;
+  width: 100%;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .products_item:not(:last-child) {
+    margin-bottom: 130px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -523,10 +540,40 @@ button {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .products_item {
+    -ms-flex-preferred-size: calc(100% / 3 - 20px);
+        flex-basis: calc(100% / 3 - 20px);
+    padding-right: 11px;
+    padding-left: 11px;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .products_item:not(:last-child) {
-    margin-right: 29px;
+    margin-right: 30px;
   }
+}
+
+@media screen and (min-width: 1280px) {
+  .products_item {
+    height: 525px;
+  }
+}
+
+.products_item::before {
+  content: '';
+  background-image: url("../images/products/ice-cream-mobile.png");
+  width: 249px;
+  height: 252px;
+  display: inline-block;
+  top: 0;
+  left: 20%;
+  color: transparent;
+  position: absolute;
+  z-index: 1;
+  -webkit-transform: translateY(-113px);
+          transform: translateY(-113px);
 }
 
 .item-first {
