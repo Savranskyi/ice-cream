@@ -58,16 +58,8 @@
   position: relative;
 
   background-color: var(--primary-background-color);
-  @media screen and (max-width: $pre-tablet) {
-    // min-height: 502px;
-  }
-  @media screen and (min-width: $tablet) {
-    // min-height: 400px;
-  }
-  @media screen and (min-width: $desktop) {
-    // min-height: 665px;
-  }
 }
+
 .wrapper-nav {
   @media screen and (max-width: $pre-tablet) {
     padding-top: 6px;
@@ -131,6 +123,11 @@
   }
   @media screen and (min-width: $desktop) {
     margin-left: 110px;
+  }
+
+  &:hover,
+  &:focus{
+    background-color: rgba(236, 235, 235, 1);
   }
 }
 .icon-btn-buy {
@@ -403,6 +400,10 @@
     width: 26px;
     height: 26px;
   }
+  &:hover,
+  &:focus{
+    background-color: rgba(236, 235, 235, 1);
+  }
 }
 .icon-btn-form {
   width: 5px;
@@ -439,7 +440,7 @@
   filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
 
   transform: translateX(0);
-  transition: transform 250ms linear;
+  transition: transform var(--transition-duration) var(--transition-function);
 
   @media screen and (min-width: $tablet) {
     min-width: 254px;
@@ -449,11 +450,10 @@
   }
 }
 .menu.is-hidden {
-  transform: translateX(100%);
-}
-.menu.is-hidden {
+  transform: translateX(120%);
   display: block;
 }
+
 .menu .btn-menu--close {
   display: block;
 }
@@ -534,6 +534,11 @@
     width: 186px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  &:hover,
+  &:focus{
+    background-color: rgba(236, 235, 235, 1);
   }
 }
 .nav-menu__link {
