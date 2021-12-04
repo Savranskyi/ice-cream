@@ -35,6 +35,17 @@
     left: 0;
 }
 
+%__link{
+    font-weight: 700;
+
+    color: var(--white-color);
+
+    &:hover,
+    &:focus{
+    color: var(--accent-color);
+    }
+}
+
 .btn{
     @include centrFlex();
     font-size: 8px;
@@ -66,10 +77,18 @@
 }
 
 .containet-nav{
-    display: flex;
-    padding-top: 38px;
-    justify-content: space-between;
-    align-items: center;
+    @media screen and (max-width:$pre-tablet) {
+        padding-top: 6px;
+    }
+    @media screen and (min-width:$tablet) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 27px;
+    }
+    @media screen and (min-width:$desktop) {
+        padding-top: 38px;
+    } 
 }
 
 .logo{
@@ -77,16 +96,30 @@
         margin-top: 6px;
         margin-bottom: 137px;
     }
-
-    @media screen and (min-width:$tablet) {
-        // margin-bottom: 15px;
-    }
-
-    @media screen and (min-width:$desktop) {
-        margin-bottom: 84px;
-    } 
 }
 
+.nav-header{
+    display: none;
+    @media screen and (min-width:$desktop){
+        display: block;
+    }
+}
+
+.nav{
+    position: relative;
+    z-index: 6;
+    display: flex;
+}
+
+.nav__item:not(:last-child){
+    margin-left: 35px;
+}
+
+.nav__link{
+    @extend %__link;
+    font-size: 16px;
+    line-height: 1.3;
+}
 
 .btn-buy--hero{
     display: none;
@@ -116,44 +149,14 @@
     stroke-width: 1px;
 }
 
-.nav-header{
-    display: none;
-    @media screen and (min-width:$desktop){
-        display: block;
-    }
-
-}
-
-.nav__link{
-    padding: 13px 0;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.4;
-    color: var(--white-color);
-    border-top: 1px solid #E18298;
-
-    &:hover,
-    &:focus{
-    color: var(--accent-color);
-    }
-
-    &:last-child{
-    border-bottom: 1px solid #E18298;
-    }
-}
-
-
 
 // TITLE H1----
 .wparrer-title{
-    @media screen and (min-width:$mobile) {
+    @media screen and (max-width:$pre-tablet) {
         margin-bottom: 19px;  
+        position: relative;
+        z-index: 2;
     } 
-
-    @media screen and (max-width:$mobile) {
-    position: relative;
-    z-index: 2;
-    }
 
     @media screen and (min-width:$tablet) {
         margin-bottom: 20px;
@@ -306,9 +309,14 @@
 
 // INFO
 .wrepper--h1-info{
-   margin-top: 15px;
-    display: flex;
-    justify-content: space-between;
+    @media screen and (min-width:$tablet) {
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    @media screen and (min-width:$desktop){
+        margin-top: 84px;
+    }
 }
 
 .info{
@@ -554,5 +562,18 @@
     width: 186px;
     margin-left: auto;
     margin-right: auto;
+    }
+}
+
+.nav-menu__link{
+    @extend %__link;
+    padding: 13px 0;
+    
+    font-size: 14px;
+    line-height: 1.4;
+    border-top: 1px solid #E18298;
+
+    &:last-child{
+    border-bottom: 1px solid #E18298;
     }
 }
