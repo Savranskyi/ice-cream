@@ -41,9 +41,11 @@
   @media screen and (max-width: $pre-tablet) {
     margin-bottom: 45px;
   }
-  &:hover,
-  &:focus {
-    transform: rotate(1turn) scale(1.3);
+
+    &:hover,
+    &:focus {
+  transform: rotate(1turn) scale(1.3);
+
   }
 }
 .about__picture {
@@ -171,8 +173,11 @@
   background-color: var(--white-color);
   border: 4px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  transition: border var(--transition-duration) var(--transition-function),
-    background-color var(--transition-duration) var(--transition-function);
+
+
+  transition: border var(--transition-duration) var(--transition-function), background-color var(--transition-duration) var(--transition-function);
+
+
   &:hover,
   &:focus {
     background-color: var(--accent-color);
@@ -184,6 +189,7 @@
   width: 12px;
   height: 12px;
   transition: fill var(--transition-duration) var(--transition-function);
+
   &:hover,
   &:focus {
     fill: var(--white-color);
@@ -206,6 +212,7 @@
     transform: scale(1.2);
   }
 }
+
 // ============SCROLL UP
 .scrollup {
   position: fixed;
@@ -216,18 +223,21 @@
   // display: none;
   text-align: center;
   fill: var(--accent-color);
+
+
   transition: transform var(--transition-duration) var(--transition-function);
+
   &:hover,
-  &:focus {
-    transform: scale(1.5);
-  }
+  &:focus{
+  transform: scale(1.5);}
 }
+
 .button-up {
-  transition: background-color var(--transition-duration) var(--transition-function),
-    fill var(--transition-duration) var(--transition-function);
+  transition: background-color var(--transition-duration) var(--transition-function), fill var(--transition-duration) var(--transition-function);
   .scrollup:hover &,
   .scrollup:focus & {
-    background-color: var(--accent-color);
-    fill: var(--white-color);
+      background-color: var(--accent-color);
+      fill: var(--white-color);
   }
 }
+
