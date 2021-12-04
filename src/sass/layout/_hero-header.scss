@@ -172,17 +172,24 @@
     letter-spacing: 0.04em;
   }
 }
-.hero .section-title {
-  @media screen and (min-width: $tablet) {
-    font-size: 34px;
-    line-height: 0.8;
-    letter-spacing: 0.04em;
-  }
-  @media screen and (min-width: $desktop) {
-    font-size: 58px;
-    line-height: 0.9;
-    letter-spacing: 0.04em;
-  }
+
+
+.br{
+    display: block;
+}
+
+.hero .section-title{
+    @media screen and (min-width:$tablet) {
+        font-size: 34px;
+        line-height: 0.8;
+        letter-spacing: 0.04em;
+    } 
+    @media screen and (min-width:$desktop) {
+        font-size: 58px;
+        line-height: 0.9;
+        letter-spacing: 0.04em;
+    } 
+
 }
 .title-btn {
   display: flex;
