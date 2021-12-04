@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://github.com/Savranskyi/ice-cream",
+  "homepage": "https://Maria-Kodi.github.io/ice-cream",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /ice-cream/"
