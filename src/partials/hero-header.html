@@ -1,7 +1,12 @@
 <header class="page-header">
 
 <!-- NAV -->
-    <div class="container containet-nav">
+    <!-- <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div> -->
+    <div class="container">
+      <div class="wrapper-nav">
         <a href="./index.html" class="logo">
 
             <img 
@@ -30,6 +35,7 @@
             </ul>
            
         </nav>
+        
         <button 
             class="btn btn-buy--hero" 
             type="button">
@@ -40,31 +46,31 @@
             </use>
             </svg>
          </button>
-    </div>
+      </div>
 
     <section class="hero">
 
-<!-- TITLE H1 -->
-        <div class="container">
-                <div class="wrepper--h1-info">
-                    <div class="wparrer-title">
-                        <h1 class="section-subtitle hero-title">ice cream<br>
-                            made with<br>
-                            <span class="section-title">passion</span>
-                        </h1>
-                    </div>
+    <!-- TITLE H1 -->
+        <div class="wrapper--h1-info">
+            <div class="wrapper-title">
+                <h1 class="section-subtitle hero-title">
+                    ice cream<br>
+                    made with<br>
+                    <span class="section-title">passion<span>
+                </h1>
+            </div>
     
                     <ul class="info">
                         <li class="info__item">
-                            <h2 class="info__title">
+                            <p class="info__title">
                                 16
-                            </h2>
+                            </p>
                             <p class="info__text">cafes</p>
                         </li>
                         <li class="info__item">
-                            <h2 class="info__title">
+                            <p class="info__title">
                                 23
-                            </h2>
+                            </p>
                             <p class="info__text">food trucks</p>
                         </li>
                     </ul>
@@ -100,11 +106,39 @@
         
 
         
-        <div class="wrapper-text--milk">
-            <p class="text--milk">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-            <button class="btn-form" type="button"></button>
+        <div class="wrapper-milk">
+            <picture class="eco-milk">
+                <source media="(min-width:1280px)" srcset="./images/hero/milk-desktop.webp 1x, ./images/hero/milk-desktop@2x.webp 2x" type="image/webp">
+
+                <source media="(min-width:1280px)" srcset="./images/hero/milk-desktop.png 1x, ./images/hero/milk-desktop@2x.png 2x" type="image/png">
+
+                <source srcset="./images/hero/milk-tablet.webp 1x, ./images/hero/milk-tablet@2x.webp 2x" type="image/webp">
+
+                <source srcset="./images/hero/milk-tablet.png 1x, ./images/hero/milk-tablet@2x.png 2x" type="image/png">
+
+                <img src="./images/hero/milk-tablet.png" alt="eco milk">
+            </picture>
+            <div class="wrapper-milk__text">
+                <p class="text-milk">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+            <button class="btn-form" type="button">
+                <svg class="icon-btn-form">
+                    <use href="./images/icons.svg#icon-arrow-right"></use>
+                </svg>
+            </button>
+            </div>
         </div>
-        <img class="tatsy" src="#" alt="so tasty">
+       
+        <picture >
+            <source media="(min-width: 1280px)" srcset="./images/hero/tasty-desktop.webp 1x, ./images/hero/tasty-desktop@2x.webp 2x" type="image/webp">
+
+            <source media="(min-width: 1280px)" srcset="./images/hero/tasty-desktop.png 1x, ./images/hero/tasty-desktop@2x.png 2x" type="image/png">
+
+            <source srcset="./images/hero/tasty-tablet.webp 1x, ./images/hero/tasty-tablet@2x.webp 2x" type="image/webp">
+
+            <source srcset="./images/hero/tasty-tablet.png 1x, ./images/hero/tasty-tablet@2x.png 2x" type="image/png">
+
+            <img class="tasty" src="./images/hero/tasty-tablet.png" alt="so tasty">
+        </picture>
      </div> 
     </section>
 
@@ -132,19 +166,19 @@
         <ul class="nav-menu">
 
         <li class="nav-menu__item">
-            <a href="#" class="nav__link">Home</a>
+            <a href="#" class="nav-menu__link">Home</a>
         </li>
         <li class="nav-menu__item">
-            <a href="#" class="nav__link">About us</a>
+            <a href="#" class="nav-menu__link">About us</a>
         </li>
         <li class="nav-menu__item">
-            <a href="#" class="nav__link">How it's made?</a>
+            <a href="#" class="nav-menu__link">How it's made?</a>
         </li>
         <li class="nav-menu__item">
-            <a href="#" class="nav__link">Our products</a>
+            <a href="#" class="nav-menu__link">Our products</a>
         </li>
         <li class="nav-menu__item">
-            <a href="#" class="nav__link">Contact</a>
+            <a href="#" class="nav-menu__link">Contact</a>
         </li>
     </ul>
 
