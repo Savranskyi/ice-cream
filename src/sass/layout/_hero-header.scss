@@ -8,6 +8,9 @@
     height: 31px;
     width: 100%;
     background-color: teal;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 .box2 {
     width: 137px;
@@ -64,19 +67,19 @@
     
     background-color: var(--primary-background-color);
     @media screen and (max-width:$pre-tablet) {
-        min-height: 502px;
+        // min-height: 502px;
     }
 
     @media screen and (min-width:$tablet) {
-        min-height: 400px;
+        // min-height: 400px;
     }
 
     @media screen and (min-width:$desktop) {
-        min-height: 665px;
+        // min-height: 665px;
     } 
 }
 
-.containet-nav{
+.wrapper-nav{
     @media screen and (max-width:$pre-tablet) {
         padding-top: 6px;
     }
@@ -85,9 +88,12 @@
         justify-content: space-between;
         align-items: center;
         padding-top: 27px;
+        margin-bottom: 15px;
     }
     @media screen and (min-width:$desktop) {
         padding-top: 38px;
+        margin-bottom: 84px;
+        justify-content: end;
     } 
 }
 
@@ -96,12 +102,17 @@
         margin-top: 6px;
         margin-bottom: 137px;
     }
+    @media screen and (min-width:$desktop){
+        position: relative;
+        right: 110px;
+    }
 }
 
 .nav-header{
     display: none;
     @media screen and (min-width:$desktop){
         display: block;
+        // margin-right: 110px;
     }
 }
 
@@ -112,11 +123,12 @@
 }
 
 .nav__item:not(:last-child){
-    margin-left: 35px;
+    margin-right: 35px;
 }
 
 .nav__link{
     @extend %__link;
+    letter-spacing: normal;
     font-size: 16px;
     line-height: 1.3;
 }
@@ -136,6 +148,9 @@
     font-size: 13px;
     // margin-bottom: 14px;
     }
+    @media screen and (min-width:$desktop){
+        margin-left: 110px;
+    }
 }
 
 .icon-btn-buy{
@@ -151,7 +166,7 @@
 
 
 // TITLE H1----
-.wparrer-title{
+.wrapper-title{
     @media screen and (max-width:$pre-tablet) {
         margin-bottom: 19px;  
         position: relative;
@@ -199,6 +214,7 @@
 
 .title-btn{
     display: flex;
+    margin-bottom: 160px;
     @media screen and (max-width:$mobile) {
     position: relative;
     z-index: 2;
@@ -269,7 +285,7 @@
         right: calc(50% - 139px);
     }
     @media screen and (min-width:$desktop) {
-        right: 450px;
+        right: calc(50% - 192px);
     }
 }
 
@@ -292,14 +308,14 @@
         height: 344px;
     }
     @media screen and (min-width:$tablet) {
-        top: -60px;
+        top: -20px;
         left: -51%;
         
         width: 324px;
         height: 322px;
     }
     @media screen and (min-width:$desktop) {
-        top: -56px;
+        top: -75px;
         left: -51%;
         
         width: 538px;
@@ -308,15 +324,12 @@
 }
 
 // INFO
-.wrepper--h1-info{
-    @media screen and (min-width:$tablet) {
-        margin-top: 15px;
+.wrapper--h1-info{
+    @media screen and (min-width:$tablet) {   
         display: flex;
         justify-content: space-between;
     }
-    @media screen and (min-width:$desktop){
-        margin-top: 84px;
-    }
+   
 }
 
 .info{
@@ -390,17 +403,33 @@
     @media screen and (max-width:$pre-tablet){
         display: none;
     }
-    display: flex;
-    justify-content: start;
-    align-items: flex-end;
-    
-    @media screen and (max-width:$pre-desktop){
+    @media screen and (min-width:$tablet){
+        display: flex;
+        justify-content: start;
+        align-items: flex-end;
         margin-bottom: 28px;
+    }
+    @media screen and (min-width:$desktop){
+        position: relative;
+        right: 33px;
+        margin-bottom: 56px;
+        
     }
 }
 
+.eco-milk{
+    @media screen and (min-width:$desktop){
+        margin-right: 30px;
+        }
+}
+
 .wrapper-milk__text{
-    width: 114px;
+    max-width: 114px;
+    @media screen and (min-width:$desktop){
+    max-width: 200px;
+    position: relative;
+    bottom: 11px;
+    }
 }
 
 .text-milk{
@@ -409,6 +438,11 @@
     line-height: 1.5;
     color: var(--white-color);
     margin-bottom: 7px;
+
+    @media screen and (min-width:$desktop){
+        font-size: 14px;
+        line-height: 1.4;
+    }
 }
 
 .btn-form{
@@ -419,12 +453,20 @@
     height: 18px;
     background-color: var(--white-color);
     border-radius: 50%;
+    @media screen and (min-width:$desktop){
+        width: 26px;
+        height: 26px;
+    }
 }
 
 .icon-btn-form{
     width: 5px;
     height: 4px;
     fill: var(--accent-color);
+    @media screen and (min-width:$desktop){
+        width: 8px;
+        height: 6px;
+    }
 }
 
 // tasty
@@ -439,7 +481,7 @@
         display: none;
     }
     @media screen and (min-width:$desktop){
-        right: calc(50% - 299px);
+        right: calc(50% - 531px);
     }
 }
 
@@ -488,15 +530,15 @@
     width: 30px;
     height: 30px;
     position: absolute;
-    
     background-color: transparent;
     @media screen and (max-width:$pre-tablet){
     top: 16px;
     right: 15px;
     }
     @media screen and (min-width:$tablet){
-        top:49px;
-        right: calc(50% - 172px);
+        // top: 45px;
+        top: 37px;
+        right: calc(50% - 169px);
     }
     @media screen and (min-width:$desktop) {
         display: none;
