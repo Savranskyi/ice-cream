@@ -458,6 +458,20 @@ button {
   background-size: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .products {
+    padding-top: 122px;
+    padding-bottom: 112px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .products {
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
+}
+
 .products__subtitle-first {
   margin-bottom: 15px;
 }
@@ -493,7 +507,13 @@ button {
     font-size: 30px;
     line-height: 1.14;
     letter-spacing: 0.04em;
+    margin-bottom: 32px;
   }
+}
+
+.products__list {
+  display: block;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -518,13 +538,13 @@ button {
 }
 
 .products__item {
+  display: block;
   height: 485px;
   padding-top: 161px;
   padding-bottom: 41px;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 16px;
+  padding-left: 16px;
   border-radius: 24px;
-  width: 100%;
   position: relative;
 }
 
@@ -586,7 +606,7 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1280px) {
   .item-first.products__item::before {
     background-image: url("../images/products/ice-cream-tablet.png");
     background-repeat: no-repeat;
@@ -747,6 +767,34 @@ button {
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .item-third.products__item::before {
     background-image: url("../images/products/milkshakes-desktop@2x.png");
+  }
+}
+
+.products__item::after {
+  content: '';
+  width: 26px;
+  height: 6px;
+  top: 40%;
+  left: 48%;
+  position: absolute;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-image: url("../images/products/points.png");
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .products__item::after {
+    top: 40%;
+    left: 45%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .products__item::after {
+    margin-bottom: 32px;
   }
 }
 
