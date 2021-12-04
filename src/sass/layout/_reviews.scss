@@ -15,7 +15,6 @@
 
 .slider__item {
   padding: 40px 50px 30px;
-  
 }
 .slider__img {
   margin-right: auto;
@@ -59,37 +58,39 @@
     background-repeat: no-repeat;
     background-image: url(/images/reviews/quotes_w54h40.svg);
     fill: var(--underline-text-color);
-}
+  }
 
-/*#region -----dots-three----- #*/
-.dots-three {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-.dots-three__item {
-  width: 4px;
-  height: 4px;
+  /*#region -----dots-three----- #*/
+  .dots-three {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .dots-three__item {
+    width: 4px;
+    height: 4px;
 
-  border: none;
-  border-radius: 50%;
-  background-color: var(--dots-three-color);
+    border: none;
+    border-radius: 50%;
+    background-color: var(--dots-three-color);
 
-  &:not(:last-child) {
-    margin-right: 10px;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  /*#endregion #*/
+
+  .slider__title {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(26 / 14);
+    text-align: center;
+    color: var(--black-color);
   }
 }
-/*#endregion #*/
 
-.slider__title {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(26 / 14);
-  text-align: center;
-  color: var(--black-color);
-}
 /*
 //id
 #left {
