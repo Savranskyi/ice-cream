@@ -6,16 +6,15 @@
   @media screen and (min-width: 1280px) {
   }
 }
-.footer__d {
-  display: flex;
-  flex-wrap: wrap;
+br {
+  @media screen and (min-width: 769px) {
+    display: none;
+  }
 }
-
 .footer__list {
   display: inline-block;
-  word-break: break-all;
+
   @media screen and (min-width: 1280px) {
-    display: flex;
   }
 }
 .footer__subtitle {
@@ -24,7 +23,9 @@
   text-transform: uppercase;
   margin-bottom: 17px;
   padding-top: 113px;
+  text-align: left;
   @media screen and (min-width: 768px) {
+    display: flex;
   }
 }
 .footer__title {
@@ -34,13 +35,14 @@
   text-transform: uppercase;
   margin-bottom: 43px;
   word-break: break-all;
-  text-align: center;
+  text-align: left;
   @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: 1, 13;
   }
   @media screen and (min-width: 1280px) {
     font-size: 56px;
+    display: flex;
     line-height: 1, 14;
   }
 }
