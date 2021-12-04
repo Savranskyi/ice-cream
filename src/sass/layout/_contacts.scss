@@ -13,7 +13,7 @@
     padding-bottom: 165px;
   }
 }
-.contacts_list {
+.contacts__list {
   margin-bottom: 54px;
   @media screen and (min-width: $tablet) {
     display: flex;
@@ -24,7 +24,7 @@
   }
 }
 
-.contacts_item {
+.contacts__item {
   border-radius: 24px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   @media screen and (max-width: $pre-tablet) {
@@ -46,7 +46,7 @@
     }
   }
 }
-.contacts_container {
+.contacts__container {
   justify-content: center;
   padding: 43px 20px;
   @media screen and (min-width: $tablet) {
@@ -56,7 +56,7 @@
     padding: 50px 44px 62px 44px;
   }
 }
-.contacts_title {
+.contacts__title {
   width: 80px;
   text-align: center;
   font-style: normal;
@@ -77,7 +77,7 @@
     margin-bottom: 32px;
   }
 }
-.contacts_title--green {
+.contacts__title--green {
   background-color: var(--background-green);
   width: 130px;
   border-radius: 4px;
@@ -85,7 +85,7 @@
     width: 138px;
   }
 }
-.contacts_address--wrap {
+.contacts__address--wrap {
   @media screen and (min-width: $tablet) {
     margin-bottom: 60px;
   }
@@ -93,7 +93,7 @@
     margin-bottom: 64px;
   }
 }
-.contacts_address {
+.contacts__address {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -109,8 +109,8 @@
     line-height: 1.87;
   }
 }
-.contacts_text,
-.connect_link {
+.contacts__text,
+.connect__link {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -126,7 +126,7 @@
     line-height: 1.81;
   }
 }
-.contacts_list-schedule {
+.contacts__list-schedule {
   margin-bottom: 50px;
   @media screen and (min-width: $tablet) {
     margin-bottom: 60px;
@@ -135,8 +135,8 @@
     margin-bottom: 64px;
   }
 }
-.contacts_text--days,
-.contacts_text--time {
+.contacts__text--days,
+.contacts__text--time {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -151,17 +151,17 @@
     line-height: 1.87;
   }
 }
-.contacts_text--time {
+.contacts__text--time {
   color: var(--subtitle-color);
 }
 
-.contacts_list-button {
+.contacts__list-button {
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: center;
   }
 }
-.contacts_item-button {
+.contacts__item-button {
   @media screen and (max-width: $pre-tablet) {
     &:not(:last-child) {
       margin-bottom: 10px;
@@ -173,7 +173,7 @@
     }
   }
 }
-.contacts_button {
+.contacts__button {
   align-items: center;
   width: 160px;
   height: 44px;
