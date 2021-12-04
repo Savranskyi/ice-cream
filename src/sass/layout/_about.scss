@@ -43,29 +43,29 @@
   }
 }
 .about__thumb {
+  transition: transform var(--transition-duration) var(--transition-function);
+
   @media screen and (max-width: $pre-tablet) {
     margin-bottom: 45px;
   }
+    &:hover {
+  transform: rotate(1turn) scale(1.1);
+  }
 }
+
 .about__picture {
   @media screen and (min-width: $tablet) {
     max-width: 340px;
   }
-  // & img{
-  //   max-width: none;
-  // }
 }
 
 // ===========контейнер с текстом
 .about__text-box {
-  padding: 0 30px;
 
   @media screen and (min-width: $tablet) {
-    padding: 0;
     width: 340px;
   }
   @media screen and (min-width: $desktop) {
-    padding-left: 70px;
     width: 463px;
   }
 }
