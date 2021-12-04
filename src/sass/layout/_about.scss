@@ -87,18 +87,21 @@
 // ==============кнопка
 .about__btn {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 176px;
   height: 44px;
-  padding: 10px 22px;
   border-radius: 22px;
+
   color: var(--accent-color);
   background-color: var(--white-color);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
+
   transition: background-color var(--transition-duration) var(--transition-function);
+
   &:hover,
   &:focus {
     background-color: #ecebeb;
@@ -120,6 +123,7 @@
   z-index: 10;
   opacity: 1;
   transition: opacity var(--transition-duration) var(--transition-function);
+  
   &.is-hidden {
     opacity: 0; /* скрывает backdrop */
     visibility: hidden;
