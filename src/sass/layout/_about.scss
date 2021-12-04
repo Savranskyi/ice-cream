@@ -3,37 +3,31 @@
   padding-bottom: 46px;
   background-color: var(--secondary-background-color);
   background-size: 100%;
-
   @media screen and (max-width: $pre-tablet) {
     background-image: url(../images/about/about-bg-mobile.png);
     background-repeat: no-repeat;
     background-position: 0 85%;
-
     // ====== для Retina экранов:
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/about/about-bg-mobile@2x.png);
     }
   }
-
   // ======для десктопа
   @media screen and (min-width: $desktop) {
     background-image: url(../images/about/about-bg-desktop.png);
     background-repeat: no-repeat;
     background-position: bottom;
   }
-
   @media screen and (min-width: $tablet) {
     padding-top: 130px;
   }
 }
 .about__title {
   margin-bottom: 25px;
-
   @media screen and (min-width: $tablet) {
     margin-bottom: 50px;
   }
 }
-
 // =============контейнер с картинкой
 .about__box {
   @media screen and (min-width: $tablet) {
@@ -44,25 +38,23 @@
 }
 .about__thumb {
   transition: transform var(--transition-duration) var(--transition-function);
-
   @media screen and (max-width: $pre-tablet) {
     margin-bottom: 45px;
   }
+
     &:hover,
     &:focus {
   transform: rotate(1turn) scale(1.3);
+
   }
 }
-
 .about__picture {
   @media screen and (min-width: $tablet) {
     max-width: 340px;
   }
 }
-
 // ===========контейнер с текстом
 .about__text-box {
-
   @media screen and (min-width: $tablet) {
     width: 340px;
   }
@@ -72,18 +64,15 @@
 }
 .about__text {
   margin-bottom: 40px;
-
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
-
   &:nth-child(2) {
     margin-bottom: 15px;
   }
   &:nth-child(3) {
     margin-bottom: 25px;
   }
-
   @media screen and (min-width: $tablet) {
     font-size: 14px;
     line-height: 1.76;
@@ -95,39 +84,31 @@
 .about__text--light {
   color: var(--description-color);
 }
-
 // ==============кнопка
 .about__btn {
   display: flex;
   align-items: center;
-
   width: 176px;
   height: 44px;
   padding: 10px 22px;
   border-radius: 22px;
-
   color: var(--accent-color);
   background-color: var(--white-color);
-
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-
   transition: background-color var(--transition-duration) var(--transition-function);
-
   &:hover,
   &:focus {
     background-color: #ecebeb;
   }
 }
-
 .about__btn-icon {
   margin-left: 14px;
   width: 8px;
   height: 10px;
 }
-
 // ========================МОДАЛКА
 .about-backdrop {
   position: fixed;
@@ -137,39 +118,32 @@
   width: 100%;
   height: 100%;
   z-index: 10;
-
   opacity: 1;
   transition: opacity var(--transition-duration) var(--transition-function);
-
   &.is-hidden {
     opacity: 0; /* скрывает backdrop */
     visibility: hidden;
     pointer-events: none; /* будет ли влиять на элемент событие указателя (мышки) - не будет. Т.е.екликаем сквозь бэкдроп*/
   }
 }
-
 .about-modal {
   //это модалка показана
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-
   padding: 40px;
   // при экране 320рх модалка на весь экран
   width: 100vw;
   background-color: var(--secondary-background-color);
   border-radius: 10px;
-
   transition: transform var(--transition-duration) var(--transition-function);
   overflow: auto;
   z-index: 9;
-
   //  когда бекдроп спрятан, мы чтото применяем к .about-modal
   .about-backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.9);
   }
-
   @media screen and (min-width: $mobile) {
     width: 0;
     min-width: 450px;
@@ -184,27 +158,25 @@
 .about-modal .about__text-box {
   width: auto;
 }
-
 //===============кнопка КРЕСТИК закрытия модального окна
 .modal__btn-close {
   position: absolute;
   top: 0;
   right: 0;
   transform: translate(-8px, 8px);
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 30px;
   height: 30px;
   padding: 0;
-
   background-color: var(--white-color);
   border: 4px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
+
   transition: border var(--transition-duration) var(--transition-function), background-color var(--transition-duration) var(--transition-function);
+
 
   &:hover,
   &:focus {
@@ -216,7 +188,6 @@
   align-items: baseline;
   width: 12px;
   height: 12px;
-
   transition: fill var(--transition-duration) var(--transition-function);
 
   &:hover,
@@ -224,7 +195,6 @@
     fill: var(--white-color);
   }
 }
-
 //===============кнопка НИЖНЯЯ закрытия модального окна
 .modal__btn {
   display: block;
@@ -233,8 +203,8 @@
   color: var(--white-color);
   background-color: var(--accent-color);
   transition: background-color var(--transition-duration) var(--transition-function),
-    box-shadow var(--transition-duration) var(--transition-function), transform var(--transition-duration) var(--transition-function);
-
+    box-shadow var(--transition-duration) var(--transition-function),
+    transform var(--transition-duration) var(--transition-function);
   &:hover,
   &:focus {
     background-color: var(--accent-color);
@@ -254,6 +224,7 @@
   text-align: center;
   fill: var(--accent-color);
 
+
   transition: transform var(--transition-duration) var(--transition-function);
 
   &:hover,
@@ -269,3 +240,4 @@
       fill: var(--white-color);
   }
 }
+
