@@ -1,13 +1,13 @@
 .about {
   padding-top: 125px;
-  padding-bottom: 20px;
+  padding-bottom: 46px;
   background-color: var(--secondary-background-color);
   background-size: 100%;
 
   @media screen and (max-width: $pre-tablet) {
     background-image: url(../images/about/about-bg-mobile.png);
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: 0 85%;
 
     // ====== для Retina экранов:
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -43,29 +43,29 @@
   }
 }
 .about__thumb {
+  transition: transform var(--transition-duration) var(--transition-function);
+
   @media screen and (max-width: $pre-tablet) {
     margin-bottom: 45px;
   }
+    &:hover {
+  transform: rotate(1turn) scale(1.3);
+  }
 }
+
 .about__picture {
   @media screen and (min-width: $tablet) {
     max-width: 340px;
   }
-  // & img{
-  //   max-width: none;
-  // }
 }
 
 // ===========контейнер с текстом
 .about__text-box {
-  padding: 0 30px;
 
   @media screen and (min-width: $tablet) {
-    padding: 0;
     width: 340px;
   }
   @media screen and (min-width: $desktop) {
-    padding-left: 70px;
     width: 463px;
   }
 }
@@ -202,6 +202,13 @@
   background-color: var(--white-color);
   border: 4px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+
+  transition: border var(--transition-duration) var(--transition-function), background-color var(--transition-duration) var(--transition-function);
+
+  &:hover {
+    background-color: var(--accent-color);
+    border: 4px solid var(--accent-color);
+  }
 }
 .modal__btn-close-icon {
   align-items: baseline;
@@ -211,7 +218,7 @@
   transition: fill var(--transition-duration) var(--transition-function);
 
   &:hover {
-    fill: var(--accent-color);
+    fill: var(--white-color);
   }
 }
 
