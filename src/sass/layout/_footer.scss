@@ -13,9 +13,8 @@
 
 .footer__list {
   display: inline-block;
-  word-break: break-all;
+
   @media screen and (min-width: 1280px) {
-    display: flex;
   }
 }
 .footer__subtitle {
