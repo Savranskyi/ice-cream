@@ -1,95 +1,150 @@
-.gallery {
+.gallery-wrap {
   background: linear-gradient(
     to top,
     var(--white-color) 60%,
     var(--secondary-background-color) 60%
   );
 }
-/* ---- grid ---- */
-
-.grid {
-  display: block;
-  margin: 0 auto;
-  @media screen and (max-width: 340px) {
-    display: none;
-  }
+.full {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
-
-/* clearfix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
+.full .content {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+  height: 100%;
+  width: 100%;
+  display: grid;
 }
-
-/* ---- grid__item ---- */
-
-.grid__item {
-  overflow: hidden;
-  margin-bottom: 6px;
-  width: 120px;
-  height: 120px;
-  float: left;
-  border-radius: 16px;
-  z-index: 0;
-  transition: all ease 500ms;
+.full .content img {
+  left: 50%;
+  transform: translate3d(0, 0, 0);
+  animation: zoomin 1s ease;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
 }
-.grid__image {
+.byebye {
+  opacity: 0;
 }
-.grid__item--large {
-  width: 246px;
-  height: 246px;
+.byebye:hover {
+  transform: scale(0.2) !important;
 }
-// .grid__item--width3 {
-//   width: 432px;
-// }
-
-// .grid__item--height2 {
-//   height: 246px;
-// }
-// .grid__item--height3 {
-//   height: 432px;
-// }
-
-.grid__item--gigante {
-  transform: scale(1.3);
-  z-index: 2;
-  @media screen and (max-width: 340px) {
-    display: none;
-  }
+.gallery {
+  display: grid;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 8px;
+  // grid-auto-columns: 8px;
 }
-
-.grid__item:hover {
-  background: #a2c;
-  border-color: white;
+.gallery img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--primary-background-color);
+  transition: all 1s ease;
+}
+.gallery img:hover {
+  box-shadow: 0 0 20px var(--primary-background-color);
+}
+.gallery .content {
+  padding: 4px;
+}
+.gallery .gallery-item {
+  transition: grid-row-start 300ms linear;
+  transition: transform 300ms ease;
+  transition: all var(--transition-duration) var(--transition-function);
   cursor: pointer;
 }
-// .stamp {
-//   position: absolute;
-//   // background: orange;
-//   // border: 1px dotted black;
-// }
-// .stamp1 {
-//   left: 0;
-//   top: 0;
-//   width: 20%;
-//   height: 146px;
-// }
-// .stamp2 {
-//   right: 0;
-//   top: 0;
-//   width: 20%;
-//   height: 146px;
-// }
-// .stamp3 {
-//   right: 10%;
-//   top: 20px;
-//   width: 30%;
-//   height: 30px;
-// }
-// .stamp4 {
-//   left: 10%;
-//   top: 20px;
-//   width: 30%;
-//   height: 30px;
-// }
+.gallery .gallery-item:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
+}
+@media (max-width: 400px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+}
+@-moz-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+@-o-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+@keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
