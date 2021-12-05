@@ -68,11 +68,14 @@
   display: block;
   height: 485px;
   padding-top: 161px;
-  padding-bottom: 41px;
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-bottom: auto;
+
   border-radius: 24px;
   position: relative;
+
+  @media screen and(max-width: $tablet) {
+    max-width: 280px;
+  }
 
   @media screen and(max-width: $tablet) {
     &:not(:last-child) {
@@ -81,8 +84,15 @@
   }
 
   @media screen and(min-width: $tablet) {
+    max-width: 220px;
+  }
+
+  @media screen and(min-width: $tablet) {
     &:not(:last-child) {
       margin-right: 20px;
+    }
+    @media screen and(min-width: $tablet) {
+      max-width: 220px;
     }
   }
 
@@ -100,6 +110,7 @@
 
   @media screen and(min-width: $desktop) {
     height: 525px;
+    max-width: 329px;
   }
 }
 
@@ -108,10 +119,12 @@
   width: 249px;
   height: 252px;
   top: 0;
-  left: 20%;
+  left: 8%;
   position: absolute;
   z-index: 1;
   transform: translateY(-113px);
+  // transform: translate(-50%, -50%) rotate(0deg);
+  // transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (max-width: $pre-tablet) {
     background-image: url('../images/products/ice-cream-mobile.png');
@@ -156,7 +169,7 @@
   width: 249px;
   height: 252px;
   top: 0;
-  left: 20%;
+  left: 8%;
   position: absolute;
   z-index: 1;
   transform: translateY(-113px);
@@ -204,7 +217,7 @@
   width: 249px;
   height: 252px;
   top: 0;
-  left: 20%;
+  left: 8%;
   position: absolute;
   z-index: 1;
   transform: translateY(-113px);
@@ -289,14 +302,56 @@
   font-family: var(--primary-font);
   font-size: 14px;
   line-height: 1.5;
+  height: 124px;
   text-align: center;
   color: var(--white-color);
   padding-right: 40px;
   padding-left: 40px;
   margin-bottom: 30px;
+  overflow: hidden;
+
+  @media screen and (min-width: $tablet) {
+    height: 124px;
+    padding-right: 11px;
+    padding-left: 11px;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    height: 106px;
+    padding-right: 44px;
+    padding-left: 44px;
+    margin-bottom: 62px;
+  }
 }
 
-.arrow__right-icon {
+.products__info {
+  padding-right: 120px;
+  padding-left: 120px;
+
+  @media screen and (min-width: $tablet) {
+    padding-right: 90px;
+    padding-left: 90px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-right: 144px;
+    padding-left: 144px;
+  }
+}
+
+.btn-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+}
+
+.icon-btn-info {
+  width: 11px;
+  height: 10px;
+  fill: var(--accent-color);
 }
