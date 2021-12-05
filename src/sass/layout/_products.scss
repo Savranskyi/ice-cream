@@ -1,7 +1,7 @@
 .products {
   padding-top: 121px;
   padding-bottom: 98px;
-  background-color: var(--background-grey);
+  background-color: var(--white-color);
   background-size: 100%;
 
   @media screen and (min-width: $tablet) {
@@ -38,13 +38,13 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--white-color);
-  margin-bottom: 30px;
+  margin-bottom: 66px;
 
   @media screen and(min-width: $desktop) {
     font-size: 30px;
     line-height: 1.14;
     letter-spacing: 0.04em;
-    margin-bottom: 32px;
+    margin-bottom: 70px;
   }
 }
 
