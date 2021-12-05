@@ -203,93 +203,94 @@
             </button>
 
             <p class="hero-modal__text section-subtitle">your dreams</p>
-            <h2 class="hero-modal__title section-title">come true here</h2>
+            <p class="hero-modal__title section-title">come true here</p>
 
 <!-- ICECREAM FORM -->
-           <div class="icecream1">
 
+        <div class="box-img-icecream1">
             <img class="img-icecream1" 
             src="./images/hero/pic1-min.png" 
             alt="ice cream">
-
-            <form class="hero-modal__form--name">
-                <label 
-                class="hero-modal__label--name" for="name">Enumeration</label>
-                <select 
-                class="hero-modal__select--name"
-                id="name" 
-                name="name">
-                <option value="ic">ice cream</option>
-                <option value="if">ice coffee</option>
-                <option value="m" selected>milkshakes</option>
-                </select>           
-            </form>
-
-            <form class="hero-modal__form--usname">
-                <label class="hero-modal__label--usname">
-                    Your name
-                    <textarea class="hero-modal__text--usname" name="Yourname" rows="1" placeholder="Djon..."></textarea>
-                  </label>  
-            </form>            
-           </div>
-
-<!-- COFFEE -->
-           <div class="icecoffe1">
+ 
             <img 
-            class="img-icecream1" 
-            src="./images/hero/pic2-min.png" 
-            alt="ice coffee">
+             class="img-icecream1" 
+             src="./images/hero/pic2-min.png" 
+             alt="ice coffee">
+ 
+             <img 
+             class="img-icecream1" 
+             src="./images/hero/pic3-min.png" 
+             alt="ice coffee">
+        </div>
 
-            <form class="hero-modal__form--size">
-                <label 
-                class="hero-modal__label--size" for="size">Size</label>
+        <form action="#" class="hero-form">
+                
+            <label 
+                class="hero-form__label hero-form__label--name" for="name">Enumeration
+                    <select 
+                    class="hero-form__select--name"
+                    id="name" 
+                    name="name">
+                    <option value="ic">ice cream</option>
+                    <option value="if">ice coffee</option>
+                    <option value="m" selected>milkshakes
+                    </option>
+                </select>  
+            </label>
+                         
+            <label class="hero-form__label hero-form__label--usname">
+                Your name
+                <textarea class="hero-form__text--usname" name="Your name" 
+                rows="1" 
+                placeholder="Djon...">
+            </textarea>
+            </label>   
+
+            <label 
+                class="hero-form__label hero-form__label--size" for="size">Size
                 <select 
-                class="hero-modal__select--size"
+                class="hero-form__select--size"
                 id="size" 
                 name="size">
                 <option value="M">Medium</option>
                 <option value="L" selected>Large</option>
                 <option value="XL">eXtra Large</option>
-                </select>                   
-            </form>
+                </select>                
+            </label>
+        
+            <label class="hero-form__label hero-form__label--mail">
+                Phone number
+                <input 
+                class="hero-form__input--mail"
+                type="tel" 
+                name="phone" 
+                placeholder="(077)770-70-70...">
+            </label>
             
-            <form class="hero-modal__form--mail">
-                <label class="hero-modal__label--mail">
-                    Phone number
-                    <input 
-                    class="hero-modal__input--mail" type="tel" 
-                    name="phone" 
-                    placeholder="(077)770-70-70...">
-                    </label>    
-            </form>            
-           </div>
-<!-- MILKSHAKES -->
-           <div class="milkshakes1">
-            <img 
-            class="img-icecream1" 
-            src="./images/hero/pic3-min.png" 
-            alt="ice coffee">
+            <label class="hero-form__label hero-form__label--number">
+                Amount
+                <input 
+                class="hero-form__input--number" type="number" 
+                name="weight" 
+                min="1" 
+                max="10" 
+                step="1" 
+                value="1">
+            </label>          
+            
+            <label class="hero-form__label hero-form__label--mail">
+                Email
+                <input 
+                class="hero-form__input--mail" type="email" 
+                name="email" 
+                placeholder="Your@mail.com...">
+            </label>    
 
-            <form class="hero-modal__form--number">
-                <label class="hero-modal__label--number">
-                    Amount
-                    <input class="hero-modal__input--number" type="number" name="weight" min="1" max="10" step="1" value="1" />
-                  </label>          
-            </form>
-            
-            <form class="hero-modal__form--mail">
-                <label class="hero-modal__label--mail">
-                    Email
-                    <input 
-                    class="hero-modal__input--mail" type="email" 
-                    name="email" 
-                    placeholder="example@mail.com...">
-                    </label>    
-            </form>
-           </div>
-           <button class="btn btn-modal-form" type="submit">
-            Yum-yum!
-           </button>
+
+            <button class="btn btn-modal-form" type="submit">
+                Yum-yum!
+               </button>
+        </form>
 
            <picture>
             <source srcset="./images/hero/click.webp" type="image/webp">
@@ -299,8 +300,7 @@
             <img class="modal-click" 
             src="./images/hero/click.png" 
             alt="click">
-           </picture>
-           
+           </picture>    
         </div>
 </div>    
     
