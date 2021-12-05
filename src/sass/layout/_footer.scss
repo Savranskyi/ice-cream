@@ -15,7 +15,7 @@ br {
   text-transform: uppercase;
   margin-bottom: 17px;
   padding-top: 113px;
-  text-align: left;
+
   @media screen and (min-width: $tablet) {
     display: flex;
   }
@@ -27,7 +27,7 @@ br {
   text-transform: uppercase;
   margin-bottom: 43px;
   word-break: break-all;
-  text-align: left;
+
   @media screen and (min-width: $tablet) {
     font-size: 48px;
     line-height: 1, 13;
@@ -50,7 +50,7 @@ br {
   text-transform: uppercase;
   margin-bottom: 17px;
   padding-top: 113px;
-  text-align: left;
+
   @media screen and (min-width: 768px) {
     display: flex;
   }
