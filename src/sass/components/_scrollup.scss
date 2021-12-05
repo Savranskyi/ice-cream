@@ -1,0 +1,27 @@
+// ============SCROLL UP
+.scrollup {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding-top: 4px;
+  cursor: pointer;
+  // display: none;
+  text-align: center;
+  fill: var(--accent-color);
+
+
+  transition: transform var(--transition-duration) var(--transition-function);
+
+  &:hover,
+  &:focus{
+  transform: scale(1.5);}
+}
+
+.button-up {
+  transition: background-color var(--transition-duration) var(--transition-function), fill var(--transition-duration) var(--transition-function);
+  .scrollup:hover &,
+  .scrollup:focus & {
+      background-color: var(--accent-color);
+      fill: var(--white-color);
+  }
+}
