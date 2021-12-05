@@ -22,6 +22,9 @@
   // Бекграунд header, hero и колонки в products.
   --primary-background-color: #ffb8ca;
 
+  // Бекграунд в products.
+  --background-grey: #e5e5e5;
+
   // Бекграунд about, footer, и части секции contacts.
   --secondary-background-color: #fff5f6;
 
@@ -31,10 +34,8 @@
   // Бекграунд колонки в products и завголовка contacts.
   --background-green: #c2e297;
 
-  /*#region -----reviews----- #*/
   --dots-three-color: #c7133e;
   --underline-text-color: #e1e1e1;
-  /*#endregion #*/
 
   // TRANSITION
   --transition-duration: 250ms;

@@ -19,9 +19,11 @@
 }
 */
 .slider__item {
+
   &:nth-child(n + 2) {
     display: none;
   }
+  
 }
 
 .slider__img {
@@ -66,6 +68,7 @@
     background-repeat: round;
     background-image: url(/images/reviews/quotes_w54h40.svg);
     fill: var(--underline-text-color);
+
     @media screen and (min-width: 480px) {
       top: -15px;
       left: -25px;
@@ -105,16 +108,26 @@
 .dots-three__item {
   width: 4px;
   height: 4px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--dots-three-color);
 
-  border: none;
-  border-radius: 50%;
-  background-color: var(--dots-three-color);
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  /*#endregion #*/
 
-  &:not(:last-child) {
-    margin-right: 10px;
+  .slider__title {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(26 / 14);
+    text-align: center;
+    color: var(--black-color);
   }
 }
-/*#endregion #*/
 
 .slider__title {
   font-family: inherit;
@@ -146,6 +159,7 @@
   top: 195px;
   transition: all ease 0.5s;
 }
+
 #left {
   background: url(/images/reviews/left.png) no-repeat;
   left: -15px;
