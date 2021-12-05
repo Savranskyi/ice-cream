@@ -37,7 +37,6 @@ br {
     line-height: 1, 14;
   }
 }
-
 .footer__buttom {
   display: flex;
   justify-content: center;
@@ -45,6 +44,9 @@ br {
   margin-top: 32px;
   padding-top: 20px;
   padding-bottom: 25px;
+
+  word-wrap: break-word;
+
   color: #907e82;
   border-top: 1px solid #e1e1e1;
 }
