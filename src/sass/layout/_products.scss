@@ -355,3 +355,74 @@
   height: 10px;
   fill: var(--accent-color);
 }
+
+.btn-info .icon__close {
+  display: none;
+}
+
+.btn-info.is-open .icon__close {
+  display: block;
+}
+
+.btn-info.is-open .icon__arrow {
+  display: none;
+}
+
+// .products__description {
+//   display: none;
+// }
+
+// .products__description.is-open {
+//   opacity: 1;
+//   visibility: visible;
+//   pointer-events: all;
+//   transform: translateX(0);
+//   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .products__points {
+//   display: flex;
+//   width: 26px;
+//   height: 6px;
+//   position: absolute;
+//   background-color: transparent;
+
+//   &:not(:last-child) {
+//     margin-right: 4px;
+//   }
+// }
+
+// .products__points {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   width: 6px;
+//   height: 6px;
+//   border: 1px solid var(--white-color);
+//   fill: var(--white-color);
+
+//   &::after {
+//     position: absolute;
+//     top: 50%;
+//     left: 0;
+//     content: '';
+//     display: block;
+//     width: 6px;
+//     height: 6px;
+//     border: 1px solid var(--white-color);
+//     fill: var(--white-color);
+//     left: calc(50% - 4px);
+//   }
+//   &::before {
+//     position: absolute;
+//     top: 50%;
+//     right: 4px;
+//     content: '';
+//     display: block;
+//     width: 6px;
+//     height: 6px;
+//     border: 1px solid var(--white-color);
+//     fill: var(--white-color);
+//     right: calc(50% - 4px);
+//   }
+// }
