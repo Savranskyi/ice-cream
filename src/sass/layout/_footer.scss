@@ -16,6 +16,12 @@ br {
   margin-bottom: 17px;
   padding-top: 113px;
 
+  &:hover {
+    transform: scaleY(0.7);
+    -webkit-transform: scaleY(0.7);
+    -moz-transform: scaleY(0.7);
+  }
+
   @media screen and (min-width: $tablet) {
     display: flex;
   }
@@ -26,8 +32,11 @@ br {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 43px;
-  word-break: break-all;
-
+  &:hover {
+    transform: scaleY(0.7);
+    -webkit-transform: scaleY(0.7);
+    -moz-transform: scaleY(0.7);
+  }
   @media screen and (min-width: $tablet) {
     font-size: 48px;
     line-height: 1, 13;
@@ -38,46 +47,8 @@ br {
     line-height: 1, 14;
   }
 }
-
-.footer__list {
-  display: inline-block;
-
-  @media screen and (min-width: 1280px) {
-  }
-}
-.footer__subtitle {
-  font-size: 18px;
-  line-height: 21px;
-  text-transform: uppercase;
-  margin-bottom: 17px;
-  padding-top: 113px;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
-}
-.footer__title {
-  font-size: 34px;
-  line-height: 39px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  margin-bottom: 43px;
-  word-break: break-all;
-  text-align: left;
-  @media screen and (min-width: 768px) {
-    font-size: 48px;
-    line-height: 1, 13;
-  }
-  @media screen and (min-width: 1280px) {
-    font-size: 56px;
-    display: flex;
-    line-height: 1, 14;
-  }
-}
-
 .footer__buttom {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   font-size: 14px;
   margin-top: 32px;
@@ -145,4 +116,6 @@ br {
   font-weight: 500;
   font-size: 16px;
   line-height: 1, 86;
+  color: black;
+  padding-right: 10px;
 }
