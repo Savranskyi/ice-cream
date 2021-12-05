@@ -7,6 +7,7 @@ br {
   }
 }
 .footer__list {
+  padding-top: 113px;
   display: inline-block;
 }
 .footer__subtitle {
@@ -14,14 +15,8 @@ br {
   line-height: 21px;
   text-transform: uppercase;
   margin-bottom: 17px;
-  padding-top: 113px;
 
-  &:hover,
-  :focus {
-    transform: scaleY(0.7);
-    -webkit-transform: scaleY(0.7);
-    -moz-transform: scaleY(0.7);
-  }
+
   @media screen and (min-width: $tablet) {
     display: flex;
   }
@@ -32,20 +27,15 @@ br {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 43px;
-  &:hover,
-  :focus {
-    transform: scaleY(0.7);
-    -webkit-transform: scaleY(0.7);
-    -moz-transform: scaleY(0.7);
-  }
+
   @media screen and (min-width: $tablet) {
     font-size: 48px;
-    line-height: 1, 13;
+    line-height: 1.13;
   }
   @media screen and (min-width: $desktop) {
     font-size: 56px;
     display: flex;
-    line-height: 1, 14;
+    line-height: 1.14;
   }
 }
 .footer__buttom {
