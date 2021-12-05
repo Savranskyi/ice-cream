@@ -1,5 +1,7 @@
 .contacts {
+  background-image: url(./src/images/contacts/contacts-background-min.png);
   background: linear-gradient(to top, var(--secondary-background-color) 94%, var(--white-color) 6%);
+  margin-top: 86px;
   padding-bottom: 113px;
   @media screen and (min-width: $tablet) {
     background: linear-gradient(
@@ -7,6 +9,7 @@
       var(--secondary-background-color) 85%,
       var(--white-color) 15%
     );
+    margin-top: 119px;
     padding-bottom: 158px;
   }
   @media screen and (min-width: $desktop) {
@@ -15,6 +18,7 @@
       var(--secondary-background-color) 90%,
       var(--white-color) 10%
     );
+    margin-top: 132px;
     padding-bottom: 165px;
   }
 }
@@ -134,7 +138,7 @@
   }
 }
 .conntacts__wrap {
-  border-bottom: 1px solid #e1e1e1;
+  border-bottom: 1px solid var(--underline-text-color);
 }
 .contacts__list-schedule {
   margin: 25px 0;
@@ -198,7 +202,6 @@
   }
 }
 .contacts__button {
-  display: flex;
   align-items: center;
   justify-content: center;
   max-width: 100%;
@@ -211,10 +214,12 @@
   line-height: 1.31;
   padding: 10px 22px;
   border-radius: 22px;
-  transition: background-color var(--transition-duration) var(--transition-function);
+
   &:hover,
   &:focus {
-    background-color: var(--accent-color);
+    background-color: #d41342;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: background-color var(--transition-duration) var(--transition-function);
   }
   @media screen and (min-width: $tablet) {
     width: 192px;
@@ -224,12 +229,12 @@
   }
 }
 .contacts__icon {
-  fill: var(--white-color);
-  stroke: var(--white-color);
-  stroke-width: 1px;
-  @media screen and (min-width: $tablet) {
-    margin-left: 13px;
-  }
+  width: 11px;
+  height: 11px;
+
+  // @media screen and (min-width: $tablet) {
+  //   margin-left: 13px;
+  // }
 }
 .contacts__button--white {
   display: flex;
@@ -245,10 +250,12 @@
   line-height: 1.31;
   padding: 10px 22px;
   border-radius: 22px;
-  transition: background-color var(--transition-duration) var(--transition-function);
+
   &:hover,
   &:focus {
     background-color: #ecebeb;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: background-color var(--transition-duration) var(--transition-function);
   }
   @media screen and (min-width: $tablet) {
     width: 174px;
@@ -256,4 +263,7 @@
   @media screen and (min-width: $desktop) {
     width: 180px;
   }
+}
+.contacts__button--wrapp {
+  display: flex;
 }
