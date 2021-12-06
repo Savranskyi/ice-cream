@@ -2,7 +2,6 @@
   padding-top: 121px;
   padding-bottom: 98px;
   background-color: var(--white-color);
-  background-size: 100%;
 
   @media screen and (min-width: $tablet) {
     padding-top: 122px;
@@ -20,14 +19,14 @@
 }
 
 .products__title {
-  margin-bottom: 144px;
+  margin-bottom: 31px;
 
   @media screen and (min-width: $tablet) {
-    margin-bottom: 150px;
+    margin-bottom: 44px;
   }
 
   @media screen and (min-width: $desktop) {
-    margin-bottom: 259px;
+    margin-bottom: 49px;
   }
 }
 
@@ -49,82 +48,111 @@
 }
 
 .products__list {
-  display: block;
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-left: 0;
 
-  @media screen and(min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: -20px;
+    // margin-left: -20px;
   }
 
   @media screen and(min-width: $desktop) {
-    margin-right: -30px;
+    display: flex;
+    margin-left: -30px;
   }
 }
 
 .products__item {
-  display: block;
-  height: 485px;
-  padding-top: 161px;
-  padding-bottom: auto;
-
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  vertical-align: top;
   border-radius: 24px;
-  position: relative;
 
-  @media screen and(max-width: $tablet) {
+  @media screen and (max-width: $pre-tablet) {
     max-width: 280px;
   }
 
-  @media screen and(max-width: $tablet) {
+  @media screen and (max-width: $pre-tablet) {
     &:not(:last-child) {
       margin-bottom: 130px;
     }
   }
 
   @media screen and(min-width: $tablet) {
-    max-width: 220px;
-  }
-
-  @media screen and(min-width: $tablet) {
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-    @media screen and(min-width: $tablet) {
-      max-width: 220px;
-    }
-  }
-
-  @media screen and(min-width: $tablet) {
-    flex-basis: calc(100% / 3 - 20px);
-    padding-right: 11px;
-    padding-left: 11px;
+    width: 220px;
+    margin-left: 20px;
   }
 
   @media screen and(min-width: $desktop) {
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
-
-  @media screen and(min-width: $desktop) {
-    height: 525px;
-    max-width: 329px;
+    width: 330px;
   }
 }
 
+// .products__item {
+//   display: block;
+//   height: 485px;
+//   padding-top: 161px;
+//   padding-bottom: auto;
+
+//   border-radius: 24px;
+//   position: relative;
+
+//   @media screen and(max-width: $tablet) {
+//     max-width: 280px;
+//   }
+
+//   @media screen and(max-width: $tablet) {
+//     &:not(:last-child) {
+//       margin-bottom: 130px;
+//     }
+//   }
+
+// @media screen and(min-width: $tablet) {
+//   max-width: 220px;
+// }
+
+//   @media screen and(min-width: $tablet) {
+//     &:not(:last-child) {
+//       margin-right: 20px;
+//     }
+// @media screen and(min-width: $tablet) {
+//   max-width: 220px;
+// }
+//   }
+
+//   @media screen and(min-width: $tablet) {
+//     flex-basis: calc(100% / 3 - 20px);
+//     padding-right: 11px;
+//     padding-left: 11px;
+//   }
+
+//   @media screen and(min-width: $desktop) {
+//     &:not(:last-child) {
+//       margin-right: 30px;
+//     }
+//   }
+
+//   @media screen and(min-width: $desktop) {
+//     height: 525px;
+//     max-width: 329px;
+//   }
+// }
+
 .item-first.products__item::before {
   content: '';
-  width: 249px;
+  width: auto;
   height: 252px;
   top: 0;
   left: 8%;
   position: absolute;
   z-index: 1;
   transform: translateY(-113px);
-  // transform: translateX(100%) rotate(0deg);
-  // transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  //   // transform: translateX(100%) rotate(0deg);
+  //   // transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (max-width: $pre-tablet) {
     background-image: url('../images/products/ice-cream-mobile.png');
@@ -135,7 +163,7 @@
     background-image: url('../images/products/ice-cream-mobile@2x.png');
   }
 
-  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+  @media screen and (min-width: $tablet) and(max-width: $desktop) {
     background-image: url('../images/products/ice-cream-tablet.png');
     background-repeat: no-repeat;
     width: 220px;
@@ -166,7 +194,7 @@
 
 .item-second.products__item::before {
   content: '';
-  width: 249px;
+  width: auto;
   height: 252px;
   top: 0;
   left: 8%;
@@ -214,7 +242,7 @@
 
 .item-third.products__item::before {
   content: '';
-  width: 249px;
+  width: auto;
   height: 252px;
   top: 0;
   left: 8%;
@@ -227,9 +255,9 @@
     background-repeat: no-repeat;
   }
 
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url('../images/products/milkshakes-mobile@2x.png');
-  }
+  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //   background-image: url('../images/products/milkshakes-mobile@2x.png');
+  // }
 
   @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
     background-image: url('../images/products/milkshakes-tablet.png');
@@ -327,18 +355,18 @@
 }
 
 .products__info {
-  padding-right: 120px;
-  padding-left: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
 
-  @media screen and (min-width: $tablet) {
-    padding-right: 90px;
-    padding-left: 90px;
-  }
+  // @media screen and (max-width: $pre-desktop) {
+  //   margin-bottom: 40px;
+  // }
 
-  @media screen and (min-width: $desktop) {
-    padding-right: 144px;
-    padding-left: 144px;
-  }
+  // @media screen and (min-width: $desktop) {
+  //   margin-bottom: 50px;
+  // }
 }
 
 .btn-info {
@@ -410,17 +438,17 @@
   transition: background-color var(--transition-duration) var(--transition-function);
 }
 
-// .products__points {
-//   display: flex;
-//   width: 26px;
-//   height: 6px;
-//   position: absolute;
-//   background-color: transparent;
+.products__points {
+  display: flex;
+  width: 26px;
+  height: 6px;
+  position: absolute;
+  background-color: transparent;
 
-//   &:not(:last-child) {
-//     margin-right: 4px;
-//   }
-// }
+  &:not(:last-child) {
+    margin-right: 4px;
+  }
+}
 
 // .products__points {
 //   position: absolute;
