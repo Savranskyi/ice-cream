@@ -29,14 +29,13 @@ text-decoration: none;
   margin-left: 115px;
   height: 222px;
   width: 330px;
-}
-}
-.advantages__item {
-  &:not(:last-child) {
+
+ &:not(:last-child) {
 margin-right: 30px;
 }
   &:nth-child(3) {
 margin-right: auto;
+}
 }
 }
 .advantages__item {
@@ -71,7 +70,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 
-@media screen and (min-width:$mobile) {
+@media screen and (max-width:$mobile) {
 display: block;
 }
 }
