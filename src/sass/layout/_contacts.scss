@@ -1,5 +1,6 @@
 .contacts {
   background: linear-gradient(to top, var(--secondary-background-color) 94%, var(--white-color) 6%);
+  margin-top: 86px;
   padding-bottom: 113px;
   @media screen and (min-width: $tablet) {
     background: linear-gradient(
@@ -7,14 +8,21 @@
       var(--secondary-background-color) 85%,
       var(--white-color) 15%
     );
+    margin-top: 119px;
     padding-bottom: 158px;
   }
   @media screen and (min-width: $desktop) {
+    // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    //   background-image: url(../src/images/contacts/contacts-background-image-min@2x-min.png);
+    // }
+    // background-image: url(../src/images/contacts/contacts-background-image-min.png);
+    // background-repeat: no-repeat;
     background: linear-gradient(
       to top,
       var(--secondary-background-color) 90%,
       var(--white-color) 10%
     );
+    margin-top: 132px;
     padding-bottom: 165px;
   }
 }
@@ -211,10 +219,12 @@
   line-height: 1.31;
   padding: 10px 22px;
   border-radius: 22px;
-  transition: background-color var(--transition-duration) var(--transition-function);
+
   &:hover,
   &:focus {
-    background-color: var(--accent-color);
+    background-color: #d41342;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: background-color var(--transition-duration) var(--transition-function);
   }
   @media screen and (min-width: $tablet) {
     width: 192px;
@@ -245,10 +255,12 @@
   line-height: 1.31;
   padding: 10px 22px;
   border-radius: 22px;
-  transition: background-color var(--transition-duration) var(--transition-function);
+
   &:hover,
   &:focus {
     background-color: #ecebeb;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: background-color var(--transition-duration) var(--transition-function);
   }
   @media screen and (min-width: $tablet) {
     width: 174px;
