@@ -31,8 +31,7 @@
 
 .about__subtitle,
 .about__title {
-    &:hover,
-    &:focus {
+    &:hover {
       transform: scale(1.025);
       transition: transform var(--transition-duration) linear;
     }
