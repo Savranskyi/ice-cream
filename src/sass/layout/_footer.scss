@@ -1,0 +1,119 @@
+.footer {
+  background-color: var(--secondary-background-color);
+  & .container {
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+.footer__titles {
+  max-width: 234px;
+  @media screen and (min-width: $tablet) {
+    max-width: 340px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 480px;
+  }
+  .section-subtitle,
+  .section-title {
+    text-align: start;
+    &:hover,
+    &:focus {
+      transform: scale(1.025);
+      transition: transform var(--transition-duration) linear;
+    }
+  }
+}
+.socials {
+}
+.socials_list {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 46px;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
+}
+.socials__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.socials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  fill: var(--white-color);
+  background-color: var(--subtitle-color);
+  transition: background-color var(--transition-duration) var(--transition-function);
+  @media screen and (min-width: $tablet) {
+    width: 32px;
+    height: 32px;
+  }
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+.socials__icon {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  @media screen and (min-width: $tablet) {
+    width: 22px;
+    height: 22px;
+  }
+}
+.socials__telephone {
+  font-size: 12px;
+  font-weight: 700;
+  text-align: end;
+  color: var(--accent-color);
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+  }
+}
+.socials__telephone-ivnite {
+  color: var(--black-color);
+}
+.copyright {
+  margin-top: 43px;
+  border-top: 1px solid #e1e1e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: $tablet) {
+    margin-top: 91px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 98px;
+  }
+}
+.copyright__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.86;
+  color: var(--description-color);
+  padding-top: 22px;
+  padding-bottom: 25px;
+  @media screen and (max-width: $pre-tablet) {
+    max-width: 150px;
+  }
+  padding-top: 29px;
+  padding-bottom: 18px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 29px;
+    padding-bottom: 18px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
