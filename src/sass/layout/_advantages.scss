@@ -26,7 +26,6 @@ text-decoration: none;
 .advantages__item {
 @media screen and (min-width:$desktop) {
   margin-right: 30px;
-  margin-left: 115px;
   height: 222px;
   width: 330px;
 
@@ -43,8 +42,7 @@ margin-right: auto;
   height: 226px;
   width: 180px;
   margin-right: 60px;
-  margin-left: 36px;
-
+  
   &:not(:last-child) {
   margin-right: 60px;
   }
@@ -58,8 +56,7 @@ margin-right: auto;
   height: 156px;
   width: 230px;  
   margin-bottom: 38px;
-  margin-left: 20px;
-
+ 
   &:nth-child(3) {
   margin-bottom: auto;
   }
