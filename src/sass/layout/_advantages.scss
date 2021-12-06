@@ -30,7 +30,7 @@ text-decoration: none;
   height: 222px;
   width: 330px;
 
-  &:nth-child(3) {
+  &:not(:last-child)  {
   margin-right: auto;
   }
 }
@@ -42,7 +42,7 @@ text-decoration: none;
   margin-right: 60px;
   margin-left: 36px;
 
-  &:nth-child(3) {
+  &:not(:last-child) {
   margin-right: auto;
   }
 }
