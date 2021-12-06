@@ -276,6 +276,11 @@
   background-repeat: no-repeat;
   margin-bottom: 30px;
 
+  // &:hover {
+  //   transform: scale(1.06);
+  //   transition: transform var(--transition-duration) linear;
+  // }
+
   @media screen and (min-width: $tablet) {
     top: 43%;
     left: 45%;
@@ -381,6 +386,10 @@
 .products__description {
   display: none;
 }
+
+// .btn-info.is-open .products__description {
+//   display: block;
+// }
 
 .products__description {
   position: absolute;
