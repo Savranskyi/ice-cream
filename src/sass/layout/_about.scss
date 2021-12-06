@@ -28,6 +28,14 @@
     margin-bottom: 50px;
   }
 }
+
+.about__subtitle,
+.about__title {
+    &:hover {
+      transform: scale(1.025);
+      transition: transform var(--transition-duration) linear;
+    }
+  }
 // =============контейнер с картинкой
 .about__box {
   @media screen and (min-width: $tablet) {

@@ -18,11 +18,11 @@
 .button-up {
   fill: var(--accent-color);
 
-  transition: background-color var(--transition-duration) var(--transition-function),
-    fill var(--transition-duration) var(--transition-function);
+  transition: fill var(--transition-duration) var(--transition-function);
   .scrollup:hover &,
   .scrollup:focus & {
     background-color: var(--accent-color);
     fill: var(--white-color);
+    border-radius: 50%;
   }
 }
