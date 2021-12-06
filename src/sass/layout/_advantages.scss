@@ -1,11 +1,10 @@
 .advantages {
-display: flex;  
 background-color: var(--secondary-background-color);
 padding-top: 39px;
 padding-bottom: 139px;
 background-size: 100%;
 
-  @media screen and (max-width:$tablet) {
+@media screen and (max-width:$tablet) {
   padding-top: 66px;
   padding-bottom: 140px;
   }
@@ -134,7 +133,7 @@ font-style: Bold;
 font-weight: 700;
 color: var(--black-color);
 
- @media screen and(min-width: $desktop) {
+ @media screen and(max-width: $desktop) {
   font-size: 16px;
   line-height: 1.7;
   letter-spacing: 0.02em; 
@@ -142,13 +141,13 @@ color: var(--black-color);
   height: 52px;
   width: 330px;
  }
- @media screen and (min-width: $pre-tablet) {
-  font-size: 14px;
+ @media screen and(min-width: $pre-desktop) {
+  font-size: 16px;
   line-height: 1.7;
-  letter-spacing: 0.02em;
-  margin-top: 13px;
-  height: 67px;
-  width: 180px;
+  letter-spacing: 0.02em; 
+  margin-top: 15px;
+  height: 52px;
+  width: 330px;
  }
   @media screen and(max-width: $tablet) {
   font-size: 14px;
@@ -158,6 +157,14 @@ color: var(--black-color);
   height: 67px;
   width: 180px;
   }
+  @media screen and(max-width: $pre-tablet) {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+    margin-top: 13px;
+    height: 67px;
+    width: 180px;
+    }
   @media screen and (max-width:$mobile) {
   font-size: 12px;
   line-height: 1.6;
