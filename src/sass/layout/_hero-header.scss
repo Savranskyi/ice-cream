@@ -97,8 +97,10 @@
   @media screen and (min-width: $tablet) {
     z-index: 5;
     display: flex;
+
     width: 160px;
     height: 44px;
+
     color: var(--accent-color);
     background-color: var(--white-color);
     font-weight: 700;
@@ -109,7 +111,6 @@
   @media screen and (min-width: $desktop) {
     margin-left: 110px;
   }
-
   &:hover,
   &:focus{
     background-color: rgba(236, 235, 235, 1);
@@ -119,6 +120,7 @@
   // margin-left: 10px;
   width: 20px;
   height: 20px;
+  
   transform: rotate(90deg);
   fill: var(--accent-color);
   stroke: var(--accent-color);
@@ -130,19 +132,24 @@
     margin-bottom: 19px;
     position: relative;
     z-index: 2;
+    width: 160px;
   }
   @media screen and (min-width: $tablet) {
     margin-bottom: 20px;
+    width: 165px;
   }
   @media screen and (min-width: $desktop) {
     margin-bottom: 25px;
+    width: 279px;
   }
 }
 .hero .hero-title {
-  color: var(--white-color);
   font-weight: 400;
   text-align: left;
   margin-bottom: 0;
+  overflow-wrap: break-word;
+
+  color: var(--white-color);
   @media screen and (min-width: $tablet) {
     font-size: 22px;
     line-height: 1.05;
@@ -155,9 +162,9 @@
   }
 }
 
-.br {
-  display: block;
-}
+// .br {
+//   display: block;
+// }
 
 .hero .section-title {
   @media screen and (min-width: $tablet) {
@@ -197,6 +204,7 @@
   width: 63px;
   color: var(--white-color);
   background-color: var(--accent-color);
+
   transition: filter 250ms linear;
 
   &:hover,
@@ -304,6 +312,7 @@
   z-index: 6;
   position: relative;
   overflow: hidden;
+
   font-family: var(--secondary-font);
   text-transform: uppercase;
   color: var(--accent-color);
@@ -414,9 +423,10 @@
 }
 
 .btn-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centrFlex();
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   width: 18px;
   height: 18px;
   background-color: var(--white-color);
@@ -463,6 +473,7 @@
   min-width: 250px;
   height: 100vh;
   padding: 60px 20px 0 20px;
+
   background-color: rgba(225, 121, 146, 1);
   filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
 
@@ -552,11 +563,13 @@
 .btn-buy {
   width: 209px;
   height: 44px;
-  color: var(--accent-color);
-  background-color: var(--white-color);
+
   font-weight: 700;
   font-size: 13px;
   margin-bottom: 19px;
+
+  color: var(--accent-color);
+  background-color: var(--white-color);
   transition: background-color 250ms linear;
   @media screen and(min-width:768px) {
     width: 186px;
@@ -583,212 +596,289 @@
 
 // END MOBILE__MENU
 
-// MOBILE__HERO
+// BUY-NOW
+.hero-modal-buyN.box-img-icecream1{
+  display: none;
+  @media screen and (min-width:$tablet) {
+    display: block;
+  }
+} 
+.mobile-buyN{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  left: 0;
 
-
-// .mobile-hero{
-//   opacity: 0;
-//   visibility: hidden;
-//   pointer-events: none;
-//   z-index: 20;
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-
-//   width: 100vw;
-//   height: 100vh;
-//   background-color: rgb(73, 55, 55, 0.5);
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(73, 55, 55, 0.5);
   
-//   transition: opacity 250ms var(--transition-function), visibility 250ms var(--transition-function);
-// }
+  transition: opacity 250ms var(--transition-function), visibility 250ms var(--transition-function);
+}
 
-// .hero-modal {
-//   z-index: 21;
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   padding: 30px;
-//   transform: translate(-50%, -50%);
+.hero-modal-buyN{
+  z-index: 21;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 30px;
+  transform: translate(-50%, -50%);
 
-//    max-width: 500px;
-//    height: 600;   
+  //  max-width: 500px;
+  //  height: 600;   
 
-//   border-radius: 20px;
-//   background-color: var(--white-color);
+  border-radius: 20px;
+  background-color: var(--white-color);
 
-//   @media screen and (max-width: $pre-tablet) {
-//     width: 450px;
-//   }
-//   @media screen and (min-width: $tablet) {
-//     min-width: 600px;
-//   }
-//   @media screen and (min-width: $desktop) {
-//     max-width: 600px;
-//     max-height: 600px;
-//   }
-// }
-// .hero-modal--close {
-//   position: absolute;
-//   top: 20px;
-//   right: 20px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 30px;
-//   height: 30px;
-//   border: 1px solid var(--accent-color);
-//   border-radius: 50%;
-//   background-color:transparent;
+  @media screen and (max-width: $pre-tablet) {
+    min-width: 300px;
+  }
+  @media screen and (min-width: $tablet) {
+    min-width: 600px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
 
-//   transition: box-shadow 250ms linear;
+.hero-buyN--close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--accent-color);
+  border-radius: 50%;
+  background-color:transparent;
 
-//   &:hover,
-//   &:focus{
-//     box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.22);
-//   }
-// }
+  transition: box-shadow 250ms linear;
 
-// .icon-modal--close{
-//   width: 14px;
-//   height: 14px;
-//   fill: var(--accent-color);
-// }
+  &:hover,
+  &:focus{
+    box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.22);
+  }
+}
 
-// .mobile-hero.is-open{
-//   opacity: 1;
-//   visibility: visible;
-//   pointer-events: all;
-// }
+.icon-buyN--close{
+  width: 14px;
+  height: 14px;
+  fill: var(--accent-color);
+}
 
-// .hero-modal .section-subtitle{
-//   @media screen and (min-width: $tablet) {
-//     font-size: 22px;
-//   }
-//   @media screen and (min-width: $desktop) {
-//     font-size: 26px;
-//   }
-// }
+.mobile-buyN.is-open{
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
 
-// .hero-modal .section-title{
-//   @media screen and (min-width: $tablet) {
-//     font-size: 40px;
-//   }
-//   @media screen and (min-width: $desktop) {
-//     font-size: 48px;
-//   }
-// }
+.hero-buyN__text{
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--subtitle-color);
+  margin-bottom: 15px;
+  @media screen and (max-width: $pre-tablet) {
+    font-size: 18px;
+  }
 
+  @media screen and (min-width: $tablet) {
+    font-size: 22px;
+  }
+  // @media screen and (min-width: $desktop) {
+  //   font-size: 26px;
+  // }
+}
 
-// // ICECREAM_FORM
+.hero-buyN__title{
+  font-family: var(--secondary-font);
+  line-height: 1.15;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--accent-color);
 
-// .box-img-icecream1{
-//   position: absolute;
-//   bottom: 34px;
-//   left: 16px;
-//   display: flex;
-//   flex-direction: column;
-//   width: 60px;
+  @media screen and (max-width: $pre-tablet) {
+    font-size: 26px;
+  }
+  @media screen and (min-width: $tablet) {
+    font-size: 40px;
+  }
+}
+
+.hero-buyN{
   
-//   @media screen and (max-width:$pre-tablet){
-//     display: none;
-//   }
+  // padding-left: 50px;
+  &:focus-within{
+    color: var(--primary-background-color);
+  }
+
+  @media screen and (max-width:$pre-tablet) {
+    justify-content: end;
+  }
+  @media screen and (min-width:$tablet) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding-left: 60px;
+  }
+}
+
+.hero-buyN__label{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  // min-width: 120px;
+  margin: 10px;
+ 
+  font-size: 17px;
+  
+  color: var(--accent-color);
+
+  @media screen and (max-width:$pre-tablet) {
+    // justify-content: end;
+  }
+  @media screen and (min-width:$tablet) {
+    max-width: 150px;
+    flex-basis: calc((100% - 4 * 10px) / 2);
+     // justify-content: end;
+    //  align-items: flex-end;
+  }
+}
+
+// .hero-buyN__label--name{
+//   position: relative;
 // }
 
-// .img-icecream1{
-//   max-width: 70px;
-// }
+.hero-buyN__label--usname{
+  @media screen and (max-width:$pre-tablet){
+    position: relative;
+    top: 209px;
+  }
+}
 
-// .img-icecream1:not(:last-child){
-//   margin-bottom: 20px;
-// }
+.hero-buyN__label--size{
+  @media screen and (max-width:$pre-tablet){
+     position: relative;
+  top: -68px; 
+  }
 
-// .hero-form{
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: start;
-//   padding-left: 50px;
-//   &:focus-within{
-//     color: var(--primary-background-color);
-//   }
-// }
+}
 
-// .hero-form__label{
-//   max-width: 150px;
-//   flex-basis: calc((100% - 4 * 10px) / 2);
-//   margin: 10px;
-//   font-size: 17px;
-//   display: flex;
-//   flex-direction: column;
-//   color: var(--accent-color);
-// }
+.hero-buyN__label--mail{
+   @media screen and (max-width:$pre-tablet){
+  position: relative;
+  }
 
-// .hero-form__select--name{
-//   @include formHero();
-//   border-radius: 4px;
-//   margin-top:5px;
-// }
+}
 
-// .hero-form__select--size{
-//   @include formHero();
-//   border-radius: 4px;
-//   margin-top:5px;
-// }
+.hero-buyN__label--number{
+  @media screen and (max-width:$pre-tablet){
+  position: relative;
+  top: -137px;
+  }
+  
+}
 
-// .hero-form__input--mail{
-//   @include formHero();
-//   border-radius: 4px;
-//   margin-top:5px;
-//   &::placeholder{
-//     color: inherit;
-//   }
-// }
+.hero-buyN__label--mail{
+  @media screen and (max-width:$pre-tablet){
+  position: relative;  
+  }
+  
+}
 
-// .hero-form__text--usname{
-//   @include formHero();
-//   border-radius: 4px;
-//   margin-top:5px;
-//   resize: none;
-//   &::placeholder{
-//     color: inherit;
-//   }
-// }
+// input--select
+.hero-buyN__select--name{
+  @include formHero();
+  border-radius: 4px;
+  margin-top:5px;
+}
 
-// .hero-form__input--number{
-//   @include formHero();
-//   border-radius: 4px;
-//   margin-top:5px;
-// }
+.hero-buyN__select--size{
+  @include formHero();
+  border-radius: 4px;
+  margin-top:5px;
+}
 
+.hero-buyN__input--mail{
+  @include formHero();
+  border-radius: 4px;
+  margin-top:5px;
+  &::placeholder{
+    color: inherit;
+  }
+}
 
+.hero-buyN__input--mail{
+  @include formHero();
+  border-radius: 4px;
+  margin-top:5px;
+  &::placeholder{
+    color: inherit;
+  }
+}
 
-// .btn.btn-modal-form{
-//   position: absolute;
-//   bottom: 37px;
-//   left: 77%;
+.hero-buyN__text--usname{
+  @include formHero();
+  border-radius: 4px;
+  margin-top:5px;
+  resize: none;
+  &::placeholder{
+    color: inherit;
+  }
+}
 
-//   font-size: 18px;
-//   height: 44px;
-//   width: 120px;
+.hero-buyN__input--number{
+  @include formHero();
+  border-radius: 4px;
+  margin-top:5px;
+}
 
-//   color: var(--white-color);
-//   background-color: var(--primary-background-color);
-//   // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-//   transform: rotate(330deg);
-//   transition: filter 250ms linear, background-color 250ms linear;
+.btn.btn-modal-buyN{
+  position: relative;
+  // bottom: 37px;
+  // left: 77%;
+  margin-right: auto;
+  margin-left: auto;
 
-//   &:hover,
-//   &:focus{
-//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-//     background-color: var(--accent-color);
-//   }
-// }
+  font-size: 18px;
+  height: 44px;
+  width: 120px;
 
-// .modal-click{
-//   position: absolute;
-//   bottom: 81px;
-//   right: 65px;
-//   width: 65px;
-//   // height: 50px;
-//   transform: rotate(330deg);
-// }
+  color: var(--white-color);
+  background-color: var(--primary-background-color);
+  // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  
+  transition: filter 250ms linear, background-color 250ms linear;
 
+  @media screen and (min-width:$tablet){
+    position: absolute;
+    bottom: 37px;
+    left: 77%;
+    transform: rotate(330deg);
+  }
+  &:hover,
+  &:focus{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: var(--accent-color);
+  }
+}
+
+.modal-click-buyN{
+  display: none;
+  @media screen and (min-width:$tablet){
+    display: block;
+    position: absolute;
+    bottom: 81px;
+    right: 65px;
+    width: 65px;
+    // height: 50px;
+    transform: rotate(330deg);
+  }
+}

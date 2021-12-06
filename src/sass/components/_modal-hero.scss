@@ -12,6 +12,9 @@
     background-color: rgb(73, 55, 55, 0.5);
     
     transition: opacity 250ms var(--transition-function), visibility 250ms var(--transition-function);
+     @media screen and (max-width: $pre-tablet) {
+      display: none;
+    }
   }
   
   .hero-modal {
@@ -28,9 +31,9 @@
     border-radius: 20px;
     background-color: var(--white-color);
   
-    @media screen and (max-width: $pre-tablet) {
-      width: 450px;
-    }
+    // @media screen and (max-width: $pre-tablet) {
+    //   width: 450px;
+    // }
     @media screen and (min-width: $tablet) {
       min-width: 600px;
     }
