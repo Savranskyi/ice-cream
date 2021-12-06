@@ -25,7 +25,7 @@
                         <a href="#header" class="nav__link">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">About us</a>
+                        <a href="#reviews" class="nav__link">About us</a>
                     </li>
                     <li class="nav__item">
                         <a href="#about" class="nav__link">How it's made?</a>
@@ -89,10 +89,10 @@
     <!-- TITLE BTN -->
                 <ul class="title-btn">
                     <li class="title-btn__item">
-                        <a href="#" class="btn title-btn--red">Products</a>
+                        <a href="#products" class="btn title-btn--red">Products</a>
                     </li>
                     <li class="title-btn__item">
-                        <a href="#" class="btn title-btn--white">How it's made?</a>
+                        <a href="#about" class="btn title-btn--white">How it's made?</a>
                     </li>
                 </ul>
     
@@ -151,7 +151,7 @@
             </picture>
         </section>
     
-        <!-- MOBILE-MENU -->
+<!-- MOBILE-MENU -->
     
         <button class="btn-menu" data-menu-open type="button">
             <span class="btn-menu--span"></span>
@@ -165,15 +165,15 @@
             </button>
 
             <button 
-             class="btn btn-buy" 
+             class="btn btn-buy js-open-buy" 
             type="button">
             Buy now
             <svg class="icon-btn-buy">
                 <use href="./images/icons.svg#icon-ctrl"></use>
             </svg>
         </button>
-            <ul class="nav-menu">
-    
+        
+        <ul class="nav-menu">
             <li class="nav-menu__item">
                 <a href="#header" class="nav-menu__link">Home</a>
             </li>
@@ -191,9 +191,12 @@
             </li>
         </ul>
         </div>
-        </div>
+    </div>
     </header>
-    <!-- MOBiLE__HERO BUY__NOW --> 
+
+
+
+<!-- MOBiLE__HERO --> 
 <div class="mobile-hero js-hero-container">
         <div class="hero-modal">
             <button class="hero-modal--close js-close-hero" type="button">
@@ -304,5 +307,112 @@
         </div>
 </div>    
 
+<!-- BUY____NOW -->
+<div class="mobile-buyN js-buy-container">
+    <div class="hero-modal-buyN">
+        <button class="hero-buyN--close js-close-buy" type="button">
+            <svg class="icon-buyN--close">
+                <use href="./images/icons.svg#icon-x"></use>
+            </svg>
+        </button>
 
+        <p class="hero-buyN__text">your dreams</p>
+        <p class="hero-buyN__title">come true here</p>
+
+        <div class="box-img-icecream1">
+            <img class="img-icecream1" 
+            src="./images/hero/pic1-min.png" 
+            alt="ice cream">
+ 
+            <img 
+             class="img-icecream1" 
+             src="./images/hero/pic2-min.png" 
+             alt="ice coffee">
+ 
+             <img 
+             class="img-icecream1" 
+             src="./images/hero/pic3-min.png" 
+             alt="ice coffee">
+        </div>
+
+        <form action="#" class="hero-buyN">
+        
+            <label 
+                class="hero-buyN__label hero-buyN__label--name" for="namebuyN">Enumeration
+                    <select 
+                    class="hero-buyN__select--name"
+                    id="namebuyN" 
+                    name="name">
+                    <option value="ic">ice cream</option>
+                    <option value="if">ice coffee</option>
+                    <option value="m" selected>milkshakes
+                    </option>
+                </select>  
+            </label>
+                         
+            <label class="hero-buyN__label hero-buyN__label--usname">
+                Your name
+                <textarea class="hero-buyN__text--usname" name="Your name" 
+                rows="1" 
+                placeholder="Djon...">
+            </textarea>
+            </label>   
+    
+            <label 
+                class="hero-buyN__label hero-buyN__label--size" for="sizebuyN">Size
+                <select 
+                class="hero-buyN__select--size"
+                id="sizebuyN" 
+                name="size">
+                <option value="M">Medium</option>
+                <option value="L" selected>Large</option>
+                <option value="XL">eXtra Large</option>
+                </select>                
+            </label>
+        
+            <label class="hero-buyN__label hero-buyN__label--mail">
+                Phone number
+                <input 
+                class="hero-buyN__input--mail"
+                type="tel" 
+                name="phone" 
+                placeholder="(077)770-70-70...">
+            </label>
+            
+            <label class="hero-buyN__label hero-buyN__label--number">
+                Amount
+                <input 
+                class="hero-buyN__input--number" type="number" 
+                name="weight" 
+                min="1" 
+                max="10" 
+                step="1" 
+                value="1">
+            </label>          
+            
+            <label class="hero-buyN__label hero-buyN__label--mail">
+                Email
+                <input 
+                class="hero-buyN__input--mail" type="email" 
+                name="email" 
+                placeholder="Your@mail.com...">
+            </label>    
+    
+    
+            <button class="btn btn-modal-buyN" type="submit">
+                Yum-yum!
+               </button>
+        </form>
+
+        <picture>
+            <source srcset="./images/hero/click.webp" type="image/webp">
+
+            <source srcset="./images/hero/click.png" type="image/png">
+
+            <img class="modal-click-buyN" 
+            src="./images/hero/click.png" 
+            alt="click">
+           </picture>   
+    </div>   
+</div>    
 
