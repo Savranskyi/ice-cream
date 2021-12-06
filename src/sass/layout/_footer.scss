@@ -18,8 +18,7 @@
   .section-subtitle,
   .section-title {
     text-align: start;
-    &:hover,
-    &:focus {
+    &:hover {
       transform: scale(1.025);
       transition: transform var(--transition-duration) linear;
     }
@@ -51,8 +50,8 @@
   background-color: var(--subtitle-color);
   transition: background-color var(--transition-duration) var(--transition-function);
   @media screen and (min-width: $tablet) {
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
   }
   &:hover,
   &:focus {
@@ -61,11 +60,9 @@
 }
 .socials__icon {
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  height: 19px;
   @media screen and (min-width: $tablet) {
-    width: 22px;
-    height: 22px;
+    height: 20px;
   }
 }
 .socials__telephone {
