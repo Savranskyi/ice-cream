@@ -12,11 +12,11 @@
     padding-bottom: 158px;
   }
   @media screen and (min-width: $desktop) {
-    background-image: url('../src/images/contacts/contacts-background-image-min.png');
-    background-repeat: no-repeat;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../src/images/contacts/contacts-background-image-min@2x-min.png');
-    }
+    // background-image: url('../src/images/contacts/contacts-background-image-min.png');
+    // background-repeat: no-repeat;
+    // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    //   background-image: url('../src/images/contacts/contacts-background-image-min@2x-min.png');
+    // }
     background: linear-gradient(
       to top,
       var(--secondary-background-color) 90%,
