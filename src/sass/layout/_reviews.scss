@@ -76,7 +76,7 @@
       z-index: -1;
 
       @media screen and (min-width: 480px) {
-        left: -20px;
+        // left: -20px;
       }
     }
     @media screen and (min-width: 768px) {
@@ -84,7 +84,7 @@
       font-size: 14px;
       line-height: calc(30 / 14);
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       padding: 0 30px;
       font-size: 16px;
       line-height: calc(30 / 16);
