@@ -1,8 +1,6 @@
 <header class="page-header" id="header">
 
-
     <!-- NAV -->
- 
         <div class="container">
           <div class="wrapper-nav">
             <a href="./index.html" class="logo">
@@ -15,7 +13,6 @@
                     <img 
                 src="./images/hero/logo.png" alt="icecrem">
                 </picture>
-                
             </a>
     
             <nav class="nav-header">
@@ -39,6 +36,49 @@
                 </ul>
                
             </nav>
+       
+            <div class="menu" data-menu>
+                <button class="btn-menu--close" data-menu-close type="button">
+                    <svg class="icon-btn-menu--close">
+                        <use href="./images/icons.svg#icon-x"></use>
+                    </svg>
+                </button>
+    
+                <button 
+                 class="btn btn-buy js-open-buy" 
+                type="button">
+                Buy now
+                <svg class="icon-btn-buy">
+                    <use href="./images/icons.svg#icon-ctrl"></use>
+                </svg>
+            </button>
+            
+<!-- Mobile menu -->
+            <ul class="nav-menu">
+                <li class="nav-menu__item">
+                    <a href="#header" class="nav-menu__link">Home</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a href="#about" class="nav-menu__link">About us</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a href="#about" class="nav-menu__link">How it's made?</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a href="#products" class="nav-menu__link">Our products</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a href="#contacts" class="nav-menu__link">Contact</a>
+                </li>
+            </ul>
+            </div>
+
+            <button class="btn-menu" data-menu-open type="button">
+                <svg class="icon-btn-menu--open">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+                <!-- <span class="btn-menu--span"></span> -->
+            </button>
             
             <button 
                 class="btn btn-buy--hero js-open-hero" 
@@ -51,19 +91,22 @@
                 </svg>
              </button>
           </div>
-    
-        <section class="hero">
+</header>   
+          <!-- HERO -->
+<section class="hero-section">
 
-    
-        <!-- TITLE H1 -->
+<div class="container">
+
+            <!-- TITLE H1 -->
             <div class="wrapper--h1-info">
                 <div class="wrapper-title">
-                    <h1 class="section-subtitle hero-title">
+                    <h1 class="hero-title">
                         <!-- убрал br добавил ovewflow-wrap с контейнерами -->
                         ice cream
                         made with
-                        <span class="section-title">
-                        passion</span>                    </h1>
+                        <span class="hero-subtitle">
+                        passion</span>                
+                    </h1>
                 </div>
         
                         <ul class="info">
@@ -95,25 +138,50 @@
                         <a href="#about" class="btn title-btn--white">How it's made?</a>
                     </li>
                 </ul>
-    
-            <picture class="icecream">
-                <source media="(min-width: 1280px)" 
-                srcset="./images/hero/slider-desktop.webp 1x, ./images/hero/slider-desktop@2x.webp 2x" type="image/webp">
-    
-                <source media="(min-width: 1280px)" srcset="./images/hero/slider-desktop.png 1x, ./images/hero/slider-desktop@2x.png 2x" type="image/png">
-    
-                <source media="(min-width: 768px)" srcset="./images/hero/slider-tablet.webp 1x, ./images/hero/slider-tablet@2x.webp 2x" type="image/webp">
-    
-                <source media="(min-width: 768px)" srcset="./images/hero/slider-tablet.png 1x, ./images/hero/slider-tablet@2x.png 2x" type="image/png">
-    
-                <source srcset="./images/hero/slider-mobile.webp 1x, ./images/hero/slider-mobile@2x.webp 2x" type="image/webp">
-    
-                <source srcset="./images/hero/slider-mobile.png 1x, ./images/hero/slider-mobile@2x.png 2x" type="image/png">
-    
-                <img src="./images/hero/slider-mobile.png" alt="icecream">
-            </picture>  
             
-    
+             <div class="box-behind">
+                <picture class="icecream-hero">
+                    <source media="(min-width: 1280px)" 
+                    srcset="./images/hero/slider-desktop.webp 1x, ./images/hero/slider-desktop@2x.webp 2x" type="image/webp">
+        
+                    <source media="(min-width: 1280px)" srcset="./images/hero/slider-desktop.png 1x, ./images/hero/slider-desktop@2x.png 2x" type="image/png">
+        
+                    <source media="(min-width: 768px)" srcset="./images/hero/slider-tablet.webp 1x, ./images/hero/slider-tablet@2x.webp 2x" type="image/webp">
+        
+                    <source media="(min-width: 768px)" srcset="./images/hero/slider-tablet.png 1x, ./images/hero/slider-tablet@2x.png 2x" type="image/png">
+        
+                    <source srcset="./images/hero/slider-mobile.webp 1x, ./images/hero/slider-mobile@2x.webp 2x" type="image/webp">
+        
+                    <source srcset="./images/hero/slider-mobile.png 1x, ./images/hero/slider-mobile@2x.png 2x" type="image/png">
+        
+                    <img src="./images/hero/slider-mobile.png" alt="icecream">
+                </picture>   
+
+                <!-- IMG -->
+            <picture class="what-is-behind1">
+                <source  srcset="./images/hero/yum1.webp" type="image/webp">
+                <source  srcset="./images/hero/yum1.png" type="image/png">
+            
+                <img src="./images/hero/yum1.png" alt="yum first">
+            </picture>
+            
+            <picture class="what-is-behind2">
+                <source  srcset="./images/hero/yum2.webp" type="image/webp">
+                <source  srcset="./images/hero/yum2.png" type="image/png">
+            
+                <img src="./images/hero/yum2.png" alt="yum first">
+            </picture>
+            
+            <picture class="what-is-behind3">
+                <source  srcset="./images/hero/yum3.webp" type="image/webp">
+                <source  srcset="./images/hero/yum3.png" type="image/png">
+            
+                <img src="./images/hero/yum3.png" alt="yum first">
+            </picture>  
+             </div>
+
+            
+             
             
             <div class="wrapper-milk">
                 <picture class="eco-milk">
@@ -149,50 +217,12 @@
                 <img class="tasty" src="./images/hero/tasty-tablet.png" alt="so tasty">
 
             </picture>
-        </section>
-    
-<!-- MOBILE-MENU -->
-    
-        <button class="btn-menu" data-menu-open type="button">
-            <span class="btn-menu--span"></span>
-        </button>
-        
-        <div class="menu is-hidden" data-menu>
-            <button class="btn-menu--close" data-menu-close type="button">
-                <svg class="icon-btn-menu--close">
-                    <use href="./images/icons.svg#icon-x"></use>
-                </svg>
-            </button>
+</div>
 
-            <button 
-             class="btn btn-buy js-open-buy" 
-            type="button">
-            Buy now
-            <svg class="icon-btn-buy">
-                <use href="./images/icons.svg#icon-ctrl"></use>
-            </svg>
-        </button>
+</section>
         
-        <ul class="nav-menu">
-            <li class="nav-menu__item">
-                <a href="#header" class="nav-menu__link">Home</a>
-            </li>
-            <li class="nav-menu__item">
-                <a href="#about" class="nav-menu__link">About us</a>
-            </li>
-            <li class="nav-menu__item">
-                <a href="#about" class="nav-menu__link">How it's made?</a>
-            </li>
-            <li class="nav-menu__item">
-                <a href="#products" class="nav-menu__link">Our products</a>
-            </li>
-            <li class="nav-menu__item">
-                <a href="#contacts" class="nav-menu__link">Contact</a>
-            </li>
-        </ul>
-        </div>
     </div>
-    </header>
+
 
 
 
@@ -414,5 +444,10 @@
             alt="click">
            </picture>   
     </div>   
-</div>    
+</div>
+
+
+
+
+
 
