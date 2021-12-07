@@ -2,15 +2,6 @@
   padding-top: 100px;
   background-color: var(--white-color);
 
-  .customer-reviews {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    & .swiper-button-next,
-    & .swiper-button-prev {
-      display: none;
-    }
-  }
-
   owl-carousel .owl-item img {
     display: block;
     width: 17%;
