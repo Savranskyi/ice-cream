@@ -91,6 +91,16 @@
   @media screen and (min-width: $desktop) {
     position: relative;
     right: 110px;
+    animation: rotateY 2000ms infinite alternate ease-in-out 1000ms;
+  }
+  @keyframes rotateY {
+    0% {
+      transform: perspective(600px) rotateY(-20deg);
+    }
+  
+    100% {
+      transform: perspective(600px) rotateY(20deg);
+    }
   }
 }
 .nav-header {
