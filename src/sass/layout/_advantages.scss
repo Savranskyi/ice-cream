@@ -24,6 +24,11 @@
 }
 
 .advantages__item {
+  &:hover {
+      transform: scale(1.025);
+      transition: transform var(--transition-duration) linear;
+    }
+
   @media screen and (max-width: $pre-tablet) {
     margin-bottom: 30px;
 
@@ -82,14 +87,15 @@
 
     background-image: url(../images/advantages/icon1.png);
 
-    // @media (min-device-pixel-ratio: 2),
-    //   (-webkit-min-device-pixel-ratio: 2),
-    //   (min-resolution: 192dpi),
-    //   (min-resolution: 2dppx) {
-    //   & {
-    //     background-image: url(../images/advantages/icon1@2x.png);
-    //     background-size: contain;
-    //   }
+     //=========медиаправило кроссбраузерности, для Retina экранов
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url(../images/advantages/icon1@2x.png);
+        background-size: contain;
+      }
+
     @media screen and (min-width: $tablet) {
       margin-bottom: 36px;
     }
@@ -110,14 +116,15 @@
 
     background-image: url(../images/advantages/icon2.png);
 
-    // @media (min-device-pixel-ratio: 2),
-    //   (-webkit-min-device-pixel-ratio: 2),
-    //   (min-resolution: 192dpi),
-    //   (min-resolution: 2dppx) {
-    //   & {
-    //     background-image: url(../images/advantages/icon2@2x.png);
-    //     background-size: contain;
-    //   }
+     //=========медиаправило кроссбраузерности, для Retina экранов
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url(../images/advantages/icon2@2x.png);
+        background-size: contain;
+      }
+
     @media screen and (min-width: $tablet) {
       margin-bottom: 36px;
     }
@@ -138,14 +145,15 @@
 
     background-image: url(../images/advantages/icon3.png);
 
-    // @media (min-device-pixel-ratio: 2),
-    //   (-webkit-min-device-pixel-ratio: 2),
-    //   (min-resolution: 192dpi),
-    //   (min-resolution: 2dppx) {
-    //   & {
-    //     background-image: url(../images/advantages/icon3@2x.png);
-    //     background-size: contain;
-    //   }
+     //=========медиаправило кроссбраузерности, для Retina экранов
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url(../images/advantages/icon3@2x.png);
+        background-size: contain;
+      }
+
     @media screen and (min-width: $tablet) {
       margin-bottom: 36px;
     }

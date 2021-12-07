@@ -3,21 +3,30 @@
   padding-bottom: 20px;
   background-color: var(--secondary-background-color);
   background-size: 100%;
+
   @media screen and (max-width: $pre-tablet) {
     background-image: url(../images/about/about-bg-mobile.png);
     background-repeat: no-repeat;
     background-position: 0 85%;
+
     // ====== для Retina экранов:
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/about/about-bg-mobile@2x.png);
     }
   }
+
   // ======для десктопа
   @media screen and (min-width: $desktop) {
     background-image: url(../images/about/about-bg-desktop.png);
     background-repeat: no-repeat;
     background-position: bottom;
+
+    // ====== для Retina экранов:
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about/about-bg-desktop@2x.png);
+    }
   }
+  
   @media screen and (min-width: $tablet) {
     padding-top: 130px;
   }
@@ -31,11 +40,11 @@
 
 .about__subtitle,
 .about__title {
-    &:hover {
-      transform: scale(1.025);
-      transition: transform var(--transition-duration) linear;
-    }
+  &:hover {
+    transform: scale(1.025);
+    transition: transform var(--transition-duration) linear;
   }
+}
 // =============контейнер с картинкой
 .about__box {
   @media screen and (min-width: $tablet) {
@@ -50,10 +59,9 @@
     margin-bottom: 45px;
   }
 
-    &:hover,
-    &:focus {
-  transform: rotate(1turn) scale(1.3);
-
+  &:hover,
+  &:focus {
+    transform: rotate(1turn) scale(1.3);
   }
 }
 .about__picture {
