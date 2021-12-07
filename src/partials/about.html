@@ -1,59 +1,53 @@
 <section class="about" id="about">
-  <a name="adout"></a>
   <div class="container">
     <p class="section-subtitle about__subtitle">tradition and love</p>
     <h2 class="section-title about__title">how it’s made?</h2>
     <div class="about__box">
-      <div class="about__thumb">
-        <picture class="about__picture">
-          <source
-            media="(min-width: 1200px)"
-            srcset="
-              ./images/about/home-pic4-desktop.webp    1x,
-              ./images/about/home-pic4-desktop@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 1200px)"
-            srcset="
-              ./images/about/home-pic4-desktop.png    1x,
-              ./images/about/home-pic4-desktop@2x.png 2x
-            "
-            type="image/png"
-          />
+      <picture class="about__picture">
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/about/home-pic4-desktop.webp    1x,
+            ./images/about/home-pic4-desktop@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/about/home-pic4-desktop.png    1x,
+            ./images/about/home-pic4-desktop@2x.png 2x
+          "
+          type="image/png"
+        />
 
-          <source
-            media="(max-width: 1199px)"
-            srcset="
-              ./images/about/home-pic4-tablet.webp    1x,
-              ./images/about/home-pic4-tablet@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(max-width: 1199px)"
-            srcset="
-              ./images/about/home-pic4-tablet.png    1x,
-              ./images/about/home-pic4-tablet@2x.png 2x
-            "
-            type="image/png"
-          />
+        <source
+          media="(max-width: 1199px)"
+          srcset="
+            ./images/about/home-pic4-tablet.webp    1x,
+            ./images/about/home-pic4-tablet@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 1199px)"
+          srcset="./images/about/home-pic4-tablet.png 1x, ./images/about/home-pic4-tablet@2x.png 2x"
+          type="image/png"
+        />
 
-          <source
-            media="(max-width: 767px)"
-            srcset="./images/about/home-pic4.webp 1x, ./images/about/home-pic4@2x.webp 2x"
-            type="image/webp"
-          />
-          <source
-            media="(max-width: 767px)"
-            srcset="./images/about/home-pic4.png 1x, ./images/about/home-pic4@2x.png 2x"
-            type="image/png"
-          />
+        <source
+          media="(max-width: 767px)"
+          srcset="./images/about/home-pic4.webp 1x, ./images/about/home-pic4@2x.webp 2x"
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="./images/about/home-pic4.png 1x, ./images/about/home-pic4@2x.png 2x"
+          type="image/png"
+        />
 
-          <img src="#" alt="cow with milk" />
-        </picture>
-      </div>
+        <img src="#" alt="cow with milk" />
+      </picture>
 
       <div class="about__text-box">
         <p class="about__text">
@@ -77,48 +71,48 @@
     </div>
   </div>
 
-    <!-- МОДАЛКА -->
-    <div class="about-backdrop is-hidden" data-modal>
-      <div class="about-modal">
-        <button class="modal__btn-close" data-modal-icon-close>
-          <svg class="modal__btn-close-icon">
-            <use href="./images/icons.svg#icon-x"></use>
-          </svg>
+  <!-- МОДАЛКА -->
+  <div class="about-backdrop is-hidden" data-modal>
+    <div class="about-modal">
+      <button class="modal__btn-close" data-modal-icon-close>
+        <svg class="modal__btn-close-icon">
+          <use href="./images/icons.svg#icon-x"></use>
+        </svg>
+      </button>
+
+      <p class="section-subtitle">tradition and love</p>
+      <h2 class="section-title about__title">how it’s made?</h2>
+      <div class="about__text-box">
+        <p class="about__text">
+          Cows graze in the meadows of the Ukrainian open spaces and the meadows of the Carpathians
+          in summer. In winter, they are fed with fragrant silage and hay.
+        </p>
+        <p class="about__text about__text--light">
+          Our company has its own raw material base and pays special attention to the parameters of
+          the processed raw materials. The company carries out maximum quality control both at the
+          stage of milk procurement and at production.
+        </p>
+        <p class="about__text about__text--light">The best milk makes the best ice cream.</p>
+        <p class="about__text about__text--light">
+          The blast chiller provides an outlet temperature of up to -30ºC, which improves the
+          appearance and quality of ice cream during further packaging and storage. Modern German
+          equipment Big Drum enables the company to offer exclusive ice cream to the Ukrainian
+          consumer.
+        </p>
+
+        <button type="" class="about__btn modal__btn" data-modal-close>
+          <span>Close</span>
         </button>
-
-        <p class="section-subtitle">tradition and love</p>
-        <h2 class="section-title about__title">how it’s made?</h2>
-        <div class="about__text-box">
-          <p class="about__text">
-            Cows graze in the meadows of the Ukrainian open spaces and the meadows of the
-            Carpathians in summer. In winter, they are fed with fragrant silage and hay.
-          </p>
-          <p class="about__text about__text--light">
-            Our company has its own raw material base and pays special attention to the parameters
-            of the processed raw materials. The company carries out maximum quality control both at
-            the stage of milk procurement and at production.
-          </p>
-          <p class="about__text about__text--light">The best milk makes the best ice cream.</p>
-          <p class="about__text about__text--light">
-            The blast chiller provides an outlet temperature of up to -30ºC, which improves the
-            appearance and quality of ice cream during further packaging and storage. Modern German
-            equipment Big Drum enables the company to offer exclusive ice cream to the Ukrainian
-            consumer.
-          </p>
-
-          <button type="" class="about__btn modal__btn" data-modal-close>
-            <span>Close</span>
-          </button>
-        </div>
       </div>
     </div>
+  </div>
 
-    <!-- SCROLL UP -->
-    <div class="scrollup">
-      <a href="#header">
-        <svg class="button-up" width="20" height="20">
-          <use href="./images/icons.svg#icon-up-arrow"></use>
-        </svg>
-      </a>
-    </div>
+  <!-- SCROLL UP -->
+  <div class="scrollup">
+    <a href="#header">
+      <svg class="button-up" width="60" height="60">
+        <use href="./images/icons.svg#icon-up-arrow"></use>
+      </svg>
+    </a>
+  </div>
 </section>
