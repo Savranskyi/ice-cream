@@ -1,29 +1,35 @@
 .contacts {
-  background: linear-gradient(to top, var(--secondary-background-color) 94%, var(--white-color) 6%);
-  margin-top: 86px;
-  padding-bottom: 113px;
+  background: linear-gradient(
+    to top,
+    var(--secondary-background-color) 90%,
+    var(--white-color) 10%
+  );
+  padding-top: 75px;
+  padding-bottom: 75px;
   @media screen and (min-width: $tablet) {
     background: linear-gradient(
       to top,
-      var(--secondary-background-color) 85%,
-      var(--white-color) 15%
+      var(--secondary-background-color) 72%,
+      var(--white-color) 28%
     );
-    margin-top: 119px;
+    padding-top: 119px;
     padding-bottom: 158px;
   }
   @media screen and (min-width: $desktop) {
     background-image: url(../images/contacts/contacts-background.png),
-      linear-gradient(to top, var(--secondary-background-color) 90%, var(--white-color) 10%);
+      linear-gradient(to top, var(--secondary-background-color) 78%, var(--white-color) 22%);
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: 40% 40%;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/contacts/contacts-background@2x.png),
-        linear-gradient(to top, var(--secondary-background-color) 90%, var(--white-color) 10%);
+        linear-gradient(to top, var(--secondary-background-color) 78%, var(--white-color) 22%);
       background-repeat: no-repeat;
       background-size: contain;
+      background-position: 40% 40%;
     }
 
-    margin-top: 132px;
+    padding-top: 132px;
     padding-bottom: 165px;
   }
 }
@@ -39,7 +45,9 @@
 }
 
 .contacts__item {
+  justify-content: center;
   margin: 0 auto;
+  padding: 43px 20px;
   border-radius: 24px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   @media screen and (max-width: $pre-tablet) {
@@ -50,25 +58,17 @@
   }
   background-color: var(--white-color);
   @media screen and (min-width: $tablet) {
+    padding: 50px 32px;
     &:not(:last-child) {
       margin-right: 20px;
     }
   }
   @media screen and (min-width: $desktop) {
     max-width: 330px;
+    padding: 50px 44px 62px 44px;
     &:not(:last-child) {
       margin-right: 30px;
     }
-  }
-}
-.contacts__container {
-  justify-content: center;
-  padding: 43px 20px;
-  @media screen and (min-width: $tablet) {
-    padding: 50px 32px;
-  }
-  @media screen and (min-width: $desktop) {
-    padding: 50px 44px 62px 44px;
   }
 }
 .contacts__title {
@@ -98,15 +98,6 @@
   border-radius: 4px;
   @media screen and (min-width: $tablet) {
     width: 138px;
-  }
-}
-.contacts__address--wrap {
-  margin: 25px 0;
-  @media screen and (min-width: $tablet) {
-    margin: 30px 0;
-  }
-  @media screen and (min-width: $desktop) {
-    margin: 32px 0;
   }
 }
 .contacts__address {
@@ -142,25 +133,24 @@
     line-height: 1.81;
   }
 }
-.conntacts__wrap {
-  border-bottom: 1px solid #e1e1e1;
-}
 .contacts__list-schedule {
-  margin: 25px 0;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 25px 0;
   @media screen and (min-width: $tablet) {
-    margin: 30px 0;
+    padding: 30px 0;
   }
   @media screen and (min-width: $desktop) {
-    margin: 32px 0;
+    padding: 32px 0;
   }
 }
 .contacts__list-connect {
-  margin-top: 25px;
+  padding-top: 25px;
   @media screen and (min-width: $tablet) {
-    margin-top: 30px;
+    padding-top: 30px;
   }
   @media screen and (min-width: $desktop) {
-    margin-top: 32px;
+    padding-top: 32px;
   }
 }
 .contacts__text--days,
