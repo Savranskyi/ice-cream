@@ -13,11 +13,18 @@
     margin-top: 15px;
   }
   .reviews__item.equal-height.style-6 {
+    height: 450px;
     background-color: var(--white-color);
     border-radius: 10px;
     margin: 10px;
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: $pre-tablet) {
       padding: 40px;
+    }
+    @media screen and (min-width: $tablet) {
+      height: 400px;
+    }
+    @media screen and (min-width: $desktop) {
+      height: 350px;
     }
   }
 
@@ -65,14 +72,14 @@
       transparent 51.61%,
       transparent 100%
     );
-    background-size: 62px 62px;
+    background-size: 60px 60px;
 
     z-index: 1;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       font-size: 14px;
       line-height: calc(31 / 14);
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop) {
       font-size: 16px;
       line-height: calc(31 / 16);
     }
@@ -102,7 +109,7 @@
       line-height: calc(30 / 14);
     }
     @media screen and (min-width: 1280px) {
-      padding: 0 30px;
+      padding: 0 20px;
       font-size: 16px;
       line-height: calc(30 / 16);
     }
