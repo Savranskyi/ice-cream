@@ -1,6 +1,6 @@
 .products {
-  padding-top: 121px;
-  padding-bottom: 98px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-color: var(--white-color);
 
   @media screen and (min-width: $tablet) {
@@ -22,10 +22,12 @@
 
 .products__subtitle-first {
   margin-bottom: 15px;
+  cursor: pointer;
 }
 
 .products__title {
   margin-bottom: 144px;
+  cursor: pointer;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 150px;
@@ -71,20 +73,14 @@
 }
 
 .products__list {
-  margin: 0;
-  padding: 0;
-  margin-left: 0;
-
   @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // margin-left: -20px;
   }
 
   @media screen and(min-width: $desktop) {
     display: flex;
-    // margin-left: -30px;
     align-items: center;
     justify-content: space-between;
   }
@@ -95,14 +91,18 @@
   border: 0;
   vertical-align: top;
   border-radius: 24px;
-  padding-top: 161px;
-  padding-bottom: 40px;
   position: relative;
   cursor: pointer;
 
   @media screen and (max-width: $pre-tablet) {
     width: 280px;
     height: 485px;
+    padding-top: 161px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media screen and (max-width: $pre-tablet) {
@@ -115,16 +115,18 @@
     width: 220px;
     height: 485px;
     padding-top: 152px;
-    // &:not(:first-child) {
-    //   margin-left: 20px;
-    // }
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-bottom: 40px;
   }
 
   @media screen and(min-width: $desktop) {
     width: 330px;
     height: 525px;
     padding-top: 163px;
-    padding-bottom: 40px;
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-bottom: 50px;
     // &:not(:first-child) {
     //   margin-left: 30px;
     // }
@@ -324,50 +326,55 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--white-color);
-  padding-right: 40px;
-  padding-left: 40px;
   margin-bottom: 50px;
   overflow: hidden;
 
   @media screen and (min-width: $tablet) {
     font-size: 14px;
     height: 124px;
-    padding-right: 11px;
-    padding-left: 11px;
     margin-bottom: 50px;
   }
 
   @media screen and (min-width: $desktop) {
     height: 106px;
-    padding-right: 44px;
-    padding-left: 44px;
     margin-bottom: 64px;
   }
 }
 
-.products__info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+// .products__info {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
 
 .btn-info-first,
 .btn-info-second,
 .btn-info-third {
   position: absolute;
   z-index: 997;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  right: 40%;
+  bottom: 8%;
   width: 40px;
   height: 40px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--white-color);
   border-radius: 50%;
-  vertical-align: bottom;
-}
 
-.products__info :hover {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+
+  @media screen and (min-width: $tablet) {
+    right: 40%;
+    bottom: 7%;
+  }
+
+  @media screen and (min-width: $desktop) {
+    right: 44%;
+    bottom: 10%;
+  }
 }
 
 .icon-btn-info-first,
@@ -423,10 +430,6 @@
   background-color: var(--primary-font);
 
   transform: scale (0);
-
-  // .btn-info.is-open & {
-  //   transform: translateY(0);
-  // }
 }
 
 .products__overflow-first.is-open,
