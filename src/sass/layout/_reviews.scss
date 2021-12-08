@@ -16,6 +16,9 @@
     background-color: var(--white-color);
     border-radius: 10px;
     margin: 10px;
+    @media screen and (max-width: $tablet) {
+      padding: 40px;
+    }
   }
 
   .reviews__image {
@@ -29,6 +32,20 @@
   }
   .reviews__title {
     text-align: center;
+    &::before {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      text-align: center;
+      width: 32px;
+      height: 4px;
+
+      background-image: url('/images/reviews/reviews-dots.svg');
+    }
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 15px;
   }
   .reviews__text {
     position: relative;
@@ -37,7 +54,7 @@
     line-height: calc(31 / 12);
     text-align: center;
     letter-spacing: 0.04em;
-
+    margin-bottom: 10px;
     background-image: linear-gradient(
       0deg,
       #e1e1e1 1.61%,
@@ -69,7 +86,7 @@
       width: 54px;
       height: 40px;
 
-      background-image: url('/images/customer-reviews/customers-reviews-brackets.svg');
+      background-image: url('/images/reviews/reviews-brackets.svg');
       background-repeat: no-repeat;
       background-size: contain;
 
