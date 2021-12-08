@@ -177,14 +177,14 @@
   }
 }
 
-.hero-title {
+.hero-subtitle {
   font-family: var(--secondary-font);
   font-size: 18px;
   font-weight: 400;
   text-align: left;
   line-height: 1.16;
   margin-bottom: 0;
-  overflow-wrap: normal;
+  // overflow-wrap: normal;
   color: var(--white-color);
   text-transform: uppercase;
 
@@ -209,7 +209,7 @@
 //   display: block;
 // }
 
-.hero-subtitle {
+.hero-title {
     font-family: var(--secondary-font);
     font-size: 48px;
     line-height: 0.93;
