@@ -53,7 +53,6 @@
   position: relative;
   background-color: var(--primary-background-color);
   @media screen and (max-width: $pre-tablet) {
-    z-index: -5;
     padding-top: 137px;
     padding-bottom: 160px;
   }
@@ -188,6 +187,8 @@
   text-transform: uppercase;
 
   @media screen and (max-width: $pre-tablet) {
+    position: relative;
+    z-index: 2;
     width: 218px;
     font-size: 26px;
     line-height: 1.11;
@@ -209,13 +210,18 @@
 
 
 .hero-title{
+  
   font-family: var(--secondary-font);
   font-size: 48px;
   line-height: 0.93;
   text-align: left;
   text-transform: uppercase;
   color: var(--accent-color);
-  
+
+    @media screen and (max-width: $pre-tablet) {
+    position: relative;
+    z-index: 2;
+  }
     @media screen and(min-width: $tablet) {
     font-size: 34px;
     line-height: 0.8;
@@ -290,11 +296,9 @@
   z-index: 1;
   @media screen and (max-width: $pre-tablet) {
     right: 32px;
-    z-index: -1;
   }
   @media screen and (min-width: $tablet) {
     right: calc(50% - 139px);
-    z-index: 1;
   }
   @media screen and (min-width: $desktop) {
     right: calc(50% - 192px);
@@ -310,7 +314,6 @@
   background-color: rgba(255, 165, 186, 1);
   border-radius: 50%;
   @media screen and (max-width: $pre-tablet) {
-    z-index: -2;
     bottom: 75px;
     left: -52%;
     width: 346px;
@@ -318,7 +321,6 @@
   }
 
   @media screen and (min-width: $tablet) {
-    z-index: -1;
     left: -51%;
     bottom: 46px;
     width: 324px;
