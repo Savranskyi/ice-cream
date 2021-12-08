@@ -38,7 +38,7 @@
 }
 .page-header {
   // overflow: hidden;
-  // position: relative;
+  position: relative;
   background-color: var(--primary-background-color);
   @media screen and (max-width: $pre-tablet) {
     padding-top: 6px;
@@ -50,7 +50,7 @@
 
 .hero-section {
   overflow: hidden;
-  position: relative;
+  // position: relative;
   background-color: var(--primary-background-color);
   @media screen and (max-width: $pre-tablet) {
     padding-top: 137px;
