@@ -58,14 +58,15 @@
   transition: transform 300ms ease;
   transition: all var(--transition-duration) var(--transition-function);
   cursor: pointer;
+  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
 }
 .gallery .gallery-item:hover {
   transform: scale(1.05);
 }
 @media (max-width: 600px) {
-  .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-  }
+  // .gallery {
+  //   grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  // }
 }
 @media (max-width: 400px) {
   .gallery {
