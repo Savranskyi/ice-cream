@@ -336,7 +336,10 @@
 .btn-info-first,
 .btn-info-second,
 .btn-info-third {
-  display: block;
+  position: absolute;
+  z-index: 997;
+  right: 40%;
+  bottom: 8%;
   width: 40px;
   height: 40px;
   margin-left: auto;
