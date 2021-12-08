@@ -179,14 +179,14 @@
   }
 }
 
-.hero-title {
+.hero-subtitle {
   font-family: var(--secondary-font);
   font-size: 18px;
   font-weight: 400;
   text-align: left;
   line-height: 1.16;
   margin-bottom: 0;
-  overflow-wrap: normal;
+  // overflow-wrap: normal;
   color: var(--white-color);
   text-transform: uppercase;
 
@@ -211,6 +211,18 @@
 //   display: block;
 // }
 
+
+.hero-title {
+    font-family: var(--secondary-font);
+    font-size: 48px;
+    line-height: 0.93;
+    text-align: left;
+    text-transform: uppercase;
+    color: var(--accent-color);
+  
+    @media screen and(min-width: $tablet) {
+      font-size: 34px;
+
 .hero-subtitle {
   font-family: var(--secondary-font);
   font-size: 48px;
@@ -220,7 +232,7 @@
   color: var(--accent-color);
 
   @media screen and(min-width: $tablet) {
-    font-size: 34px;
+
     line-height: 0.8;
     letter-spacing: 0.04em;
   }
