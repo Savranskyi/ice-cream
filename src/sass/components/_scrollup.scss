@@ -6,6 +6,7 @@
   padding-top: 4px;
   cursor: pointer;
   text-align: center;
+  z-index: 99;
 
   transition: transform var(--transition-duration) var(--transition-function);
 
