@@ -7,7 +7,7 @@
   @media screen and (max-width: $pre-tablet) {
     background-image: url(../images/about/about-bg-mobile.png);
     background-repeat: no-repeat;
-    background-position: 0 85%;
+    background-position: bottom;
 
     // ====== для Retina экранов:
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -31,6 +31,7 @@
     padding-top: 130px;
   }
 }
+
 .about__title {
   margin-bottom: 25px;
   @media screen and (min-width: $tablet) {
@@ -54,6 +55,7 @@
   }
 }
 .about__picture {
+  
   transition: transform var(--transition-duration) var(--transition-function);
   @media screen and (max-width: $pre-tablet) {
     margin-bottom: 45px;
@@ -62,9 +64,6 @@
   &:hover,
   &:focus {
     transform: rotate(1turn) scale(1.3);
-  }
-  @media screen and (min-width: $tablet) {
-    max-width: 340px;
   }
 }
 // ===========контейнер с текстом

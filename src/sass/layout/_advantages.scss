@@ -24,6 +24,7 @@
 }
 
 .advantages__item {
+  width: 230px;
   &:hover {
       transform: scale(1.025);
       transition: transform var(--transition-duration) linear;
