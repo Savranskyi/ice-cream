@@ -10,7 +10,7 @@ var resizeAll = function () {
     });
 };
 gallery.querySelectorAll('img').forEach(function (item) {
-    item.classList.add('byebye');
+    // item.classList.add('byebye');
     if (item.complete) {
         console.log(item.src);
     }
@@ -20,7 +20,7 @@ gallery.querySelectorAll('img').forEach(function (item) {
             var gap = getVal(gallery, 'grid-row-gap');
             var gitem = item.parentElement.parentElement;
             gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
-            item.classList.remove('byebye');
+            // item.classList.remove('byebye');
         });
     }
 });
