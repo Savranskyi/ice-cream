@@ -63,16 +63,16 @@
 .gallery .gallery-item:hover {
   transform: scale(1.05);
 }
-@media (max-width: 600px) {
-  .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-  }
-}
-@media (max-width: 400px) {
-  .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-  }
-}
+// @media (max-width: 600px) {
+//   .gallery {
+//     grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+//   }
+// }
+// @media (max-width: 480px) {
+//   .gallery {
+//     grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+//   }
+// }
 @-moz-keyframes zoomin {
   0% {
     max-width: 50%;
