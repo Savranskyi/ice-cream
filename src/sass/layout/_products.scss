@@ -346,10 +346,9 @@
   margin-right: auto;
   background-color: var(--white-color);
   border-radius: 50%;
-
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
+  transition: transform var(--transition-duration) linear;
+  &:hover {
+    transform: scale(1.05);
   }
 
   @media screen and (min-width: $tablet) {
@@ -369,11 +368,10 @@
   width: 11px;
   height: 10px;
   fill: var(--accent-color);
-
-  &:hover,
-  &:focus {
-    fill: var(--white-color);
-  }
+  // &:hover,
+  // &:focus {
+  //   fill: var(--white-color);
+  // }
 }
 
 .btn-info-first .icon__arrow,

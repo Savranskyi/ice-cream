@@ -1,444 +1,436 @@
 <header class="page-header" id="header">
+  <!-- NAV -->
+  <div class="container">
+    <div class="wrapper-nav">
+      <a href="./index.html" class="logo">
+        <picture>
+          <source
+            srcset="./images/hero/logo.webp 1x, ./images/hero/logo@2x.webp 2x"
+            type="image/webp"
+          />
 
-    <!-- NAV -->
-        <div class="container">
-          <div class="wrapper-nav">
-            <a href="./index.html" class="logo">
-                
-                <picture>
-                    <source srcset="./images/hero/logo.webp 1x, ./images/hero/logo@2x.webp 2x" type="image/webp">
+          <source
+            srcset="./images/hero/logo.png 1x, ./images/hero/logo@2x.png 2x"
+            type="image/png"
+          />
 
-                    <source srcset="./images/hero/logo.png 1x, ./images/hero/logo@2x.png 2x" type="image/png">
+          <img src="./images/hero/logo.png" alt="icecrem" />
+        </picture>
+      </a>
 
-                    <img 
-                src="./images/hero/logo.png" alt="icecrem">
-                </picture>
-            </a>
-    
-            <nav class="nav-header">
-                <ul class="nav">
-    
-                    <li class="nav__item">
-                        <a href="#header" class="nav__link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#reviews" class="nav__link">About us</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">How it's made?</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#products" class="nav__link">Our products</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contacts" class="nav__link">Contact</a>
-                    </li>
-                </ul>
-               
-            </nav>
-       
-            <div class="menu" data-menu>
-                <button class="btn-menu--close" data-menu-close type="button">
-                    <svg class="icon-btn-menu--close">
-                        <use href="./images/icons.svg#icon-x"></use>
-                    </svg>
-                </button>
-    
-                <button 
-                 class="btn btn-buy js-open-buy" 
-                type="button">
-                Buy now
-                <svg class="icon-btn-buy">
-                    <use href="./images/icons.svg#icon-ctrl"></use>
-                </svg>
-            </button>
-            
-<!-- Mobile menu -->
-            <ul class="nav-menu">
-                <li class="nav-menu__item">
-                    <a href="#header" class="nav-menu__link">Home</a>
-                </li>
-                <li class="nav-menu__item">
-                    <a href="#reviews" class="nav-menu__link">About us</a>
-                </li>
-                <li class="nav-menu__item">
-                    <a href="#about" class="nav-menu__link">How it's made?</a>
-                </li>
-                <li class="nav-menu__item">
-                    <a href="#products" class="nav-menu__link">Our products</a>
-                </li>
-                <li class="nav-menu__item">
-                    <a href="#contacts" class="nav-menu__link">Contact</a>
-                </li>
-            </ul>
-            </div>
+      <nav class="nav-header">
+        <ul class="nav">
+          <li class="nav__item">
+            <a href="#header" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#reviews" class="nav__link">About us</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">How it's made?</a>
+          </li>
+          <li class="nav__item">
+            <a href="#products" class="nav__link">Our products</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
 
-            <button class="btn-menu" data-menu-open type="button">
-                <svg class="icon-btn-menu--open">
-                    <use href="./images/icons.svg#icon-burger"></use>
-                </svg>
-               
-            </button>
-            
-            <button 
-                class="btn btn-buy--hero js-open-hero" 
-                type="button">
-                Buy now
-                <svg class="icon-btn-buy">
-                <use href="./images/icons.svg#icon-ctrl">
-    
-                </use>
-                </svg>
-             </button>
-          </div>
-        </div>
-</header>   
-          <!-- HERO -->
+      <div class="menu" data-menu>
+        <button class="btn-menu--close" data-menu-close type="button">
+          <svg class="icon-btn-menu--close">
+            <use href="./images/icons.svg#icon-x"></use>
+          </svg>
+        </button>
+
+        <button class="btn btn-buy js-open-buy" type="button" aria-label="menu">
+          Buy now
+          <svg class="icon-btn-buy">
+            <use href="./images/icons.svg#icon-ctrl"></use>
+          </svg>
+        </button>
+
+        <!-- Mobile menu -->
+        <ul class="nav-menu">
+          <li class="nav-menu__item">
+            <a href="#header" class="nav-menu__link">Home</a>
+          </li>
+          <li class="nav-menu__item">
+            <a href="#reviews" class="nav-menu__link">About us</a>
+          </li>
+          <li class="nav-menu__item">
+            <a href="#about" class="nav-menu__link">How it's made?</a>
+          </li>
+          <li class="nav-menu__item">
+            <a href="#products" class="nav-menu__link">Our products</a>
+          </li>
+          <li class="nav-menu__item">
+            <a href="#contacts" class="nav-menu__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="btn-menu" data-menu-open type="button">
+        <svg class="icon-btn-menu--open">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
+
+      <button class="btn btn-buy--hero js-open-hero" type="button">
+        Buy now
+        <svg class="icon-btn-buy">
+          <use href="./images/icons.svg#icon-ctrl"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+<!-- HERO -->
 <section class="hero-section">
+  <div class="container">
+    <!-- TITLE H1 -->
+    <div class="wrapper--h1-info">
+      <div class="wrapper-title">
+        <p class="hero-subtitle">ice cream made with</p>
+        <h1 class="hero-title">passion</h1>
+      </div>
 
-<div class="container">
-
-            <!-- TITLE H1 -->
-            <div class="wrapper--h1-info">
-                <div class="wrapper-title">
-                    <p class="hero-subtitle">ice cream made with</p>
-                    <h1 class="hero-title">passion</h1>   
-                </div>
-        
-                        <ul class="info">
-                            <li class="info__item">
-                                <p class="info__title">
-                                    16
-                                </p>
-                                <p class="info__text">cafes</p>
-                                <div class="info__box"></div>
-                            </li>
-                            <li class="info__item">
-                                <p class="info__title">
-                                    23
-                                </p>
-                                <p class="info__text">food trucks</p>
-                                <div class="info__box"></div>
-                            </li>
-                        </ul>
-            </div>
+      <ul class="info">
+        <li class="info__item">
+          <p class="info__title">16</p>
+          <p class="info__text">cafes</p>
+          <div class="info__box"></div>
+        </li>
+        <li class="info__item">
+          <p class="info__title">23</p>
+          <p class="info__text">food trucks</p>
+          <div class="info__box"></div>
+        </li>
+      </ul>
+    </div>
     <!-- END TITLE H1 -->
-    
-    
+
     <!-- TITLE BTN -->
-                <ul class="title-btn">
-                    <li class="title-btn__item">
-                        <a href="#products" class="btn title-btn--red">Products</a>
-                    </li>
-                    <li class="title-btn__item">
-                        <a href="#about" class="btn title-btn--white">How it's made?</a>
-                    </li>
-                </ul>
-            
-             <div class="box-behind">
-                <picture class="icecream-hero">
-                    <source media="(min-width: 1280px)" 
-                    srcset="./images/hero/slider-desktop.webp 1x, ./images/hero/slider-desktop@2x.webp 2x" type="image/webp">
-        
-                    <source media="(min-width: 1280px)" srcset="./images/hero/slider-desktop.png 1x, ./images/hero/slider-desktop@2x.png 2x" type="image/png">
-        
-                    <source media="(min-width: 768px)" srcset="./images/hero/slider-tablet.webp 1x, ./images/hero/slider-tablet@2x.webp 2x" type="image/webp">
-        
-                    <source media="(min-width: 768px)" srcset="./images/hero/slider-tablet.png 1x, ./images/hero/slider-tablet@2x.png 2x" type="image/png">
-        
-                    <source srcset="./images/hero/slider-mobile.webp 1x, ./images/hero/slider-mobile@2x.webp 2x" type="image/webp">
-        
-                    <source srcset="./images/hero/slider-mobile.png 1x, ./images/hero/slider-mobile@2x.png 2x" type="image/png">
-        
-                    <img src="./images/hero/slider-mobile.png" alt="icecream">
-                </picture>   
+    <ul class="title-btn">
+      <li class="title-btn__item">
+        <a href="#products" class="btn title-btn--red">Products</a>
+      </li>
+      <li class="title-btn__item">
+        <a href="#about" class="btn title-btn--white">How it's made?</a>
+      </li>
+    </ul>
 
-                <!-- IMG -->
-            <picture class="what-is-behind1">
-                <source  srcset="./images/hero/yum1.webp" type="image/webp">
-                <source  srcset="./images/hero/yum1.png" type="image/png">
-            
-                <img src="./images/hero/yum1.png" alt="yum first">
-            </picture>
-            
-            <picture class="what-is-behind2">
-                <source  srcset="./images/hero/yum2.webp" type="image/webp">
-                <source  srcset="./images/hero/yum2.png" type="image/png">
-            
-                <img src="./images/hero/yum2.png" alt="yum first">
-            </picture>
-            
-            <picture class="what-is-behind3">
-                <source  srcset="./images/hero/yum3.webp" type="image/webp">
-                <source  srcset="./images/hero/yum3.png" type="image/png">
-            
-                <img src="./images/hero/yum3.png" alt="yum first">
-            </picture>  
-             </div>
+    <div class="box-behind">
+      <picture class="icecream-hero">
+        <source
+          media="(min-width: 1280px)"
+          srcset="./images/hero/slider-desktop.webp 1x, ./images/hero/slider-desktop@2x.webp 2x"
+          type="image/webp"
+        />
 
-            
-             
-            
-            <div class="wrapper-milk">
-                <picture class="eco-milk">
-                    <source media="(min-width:1280px)" srcset="./images/hero/milk-desktop.webp 1x, ./images/hero/milk-desktop@2x.webp 2x" type="image/webp">
-    
-                    <source media="(min-width:1280px)" srcset="./images/hero/milk-desktop.png 1x, ./images/hero/milk-desktop@2x.png 2x" type="image/png">
-    
-                    <source srcset="./images/hero/milk-tablet.webp 1x, ./images/hero/milk-tablet@2x.webp 2x" type="image/webp">
-    
-                    <source srcset="./images/hero/milk-tablet.png 1x, ./images/hero/milk-tablet@2x.png 2x" type="image/png">
-    
-                    <img src="./images/hero/milk-tablet.png" alt="eco milk">
-                </picture>
-                <div class="wrapper-milk__text">
-                    <p class="text-milk">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-                <button class="btn-form" type="button">
-                    <svg class="icon-btn-form">
-                        <use href="./images/icons.svg#icon-arrow-right"></use>
-                    </svg>
-                </button>
-                </div>
-            </div>
-           
-            <picture >
-                <source media="(min-width: 1280px)" srcset="./images/hero/tasty-desktop.webp 1x, ./images/hero/tasty-desktop@2x.webp 2x" type="image/webp">
-    
-                <source media="(min-width: 1280px)" srcset="./images/hero/tasty-desktop.png 1x, ./images/hero/tasty-desktop@2x.png 2x" type="image/png">
-    
-                <source srcset="./images/hero/tasty-tablet.webp 1x, ./images/hero/tasty-tablet@2x.webp 2x" type="image/webp">
-    
-                <source srcset="./images/hero/tasty-tablet.png 1x, ./images/hero/tasty-tablet@2x.png 2x" type="image/png">
-    
-                <img class="tasty" src="./images/hero/tasty-tablet.png" alt="so tasty">
+        <source
+          media="(min-width: 1280px)"
+          srcset="./images/hero/slider-desktop.png 1x, ./images/hero/slider-desktop@2x.png 2x"
+          type="image/png"
+        />
 
-            </picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="./images/hero/slider-tablet.webp 1x, ./images/hero/slider-tablet@2x.webp 2x"
+          type="image/webp"
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="./images/hero/slider-tablet.png 1x, ./images/hero/slider-tablet@2x.png 2x"
+          type="image/png"
+        />
+
+        <source
+          srcset="./images/hero/slider-mobile.webp 1x, ./images/hero/slider-mobile@2x.webp 2x"
+          type="image/webp"
+        />
+
+        <source
+          srcset="./images/hero/slider-mobile.png 1x, ./images/hero/slider-mobile@2x.png 2x"
+          type="image/png"
+        />
+
+        <img src="./images/hero/slider-mobile.png" alt="icecream" />
+      </picture>
+
+      <!-- IMG -->
+      <picture class="what-is-behind1">
+        <source srcset="./images/hero/yum1.webp" type="image/webp" />
+        <source srcset="./images/hero/yum1.png" type="image/png" />
+
+        <img src="./images/hero/yum1.png" alt="yum first" />
+      </picture>
+
+      <picture class="what-is-behind2">
+        <source srcset="./images/hero/yum2.webp" type="image/webp" />
+        <source srcset="./images/hero/yum2.png" type="image/png" />
+
+        <img src="./images/hero/yum2.png" alt="yum first" />
+      </picture>
+
+      <picture class="what-is-behind3">
+        <source srcset="./images/hero/yum3.webp" type="image/webp" />
+        <source srcset="./images/hero/yum3.png" type="image/png" />
+
+        <img src="./images/hero/yum3.png" alt="yum first" />
+      </picture>
     </div>
 
+    <div class="wrapper-milk">
+      <picture class="eco-milk">
+        <source
+          media="(min-width:1280px)"
+          srcset="./images/hero/milk-desktop.webp 1x, ./images/hero/milk-desktop@2x.webp 2x"
+          type="image/webp"
+        />
+
+        <source
+          media="(min-width:1280px)"
+          srcset="./images/hero/milk-desktop.png 1x, ./images/hero/milk-desktop@2x.png 2x"
+          type="image/png"
+        />
+
+        <source
+          srcset="./images/hero/milk-tablet.webp 1x, ./images/hero/milk-tablet@2x.webp 2x"
+          type="image/webp"
+        />
+
+        <source
+          srcset="./images/hero/milk-tablet.png 1x, ./images/hero/milk-tablet@2x.png 2x"
+          type="image/png"
+        />
+
+        <img src="./images/hero/milk-tablet.png" alt="eco milk" />
+      </picture>
+      <div class="wrapper-milk__text">
+        <p class="text-milk">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <button class="btn-form" type="button">
+          <svg class="icon-btn-form">
+            <use href="./images/icons.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <picture>
+      <source
+        media="(min-width: 1280px)"
+        srcset="./images/hero/tasty-desktop.webp 1x, ./images/hero/tasty-desktop@2x.webp 2x"
+        type="image/webp"
+      />
+
+      <source
+        media="(min-width: 1280px)"
+        srcset="./images/hero/tasty-desktop.png 1x, ./images/hero/tasty-desktop@2x.png 2x"
+        type="image/png"
+      />
+
+      <source
+        srcset="./images/hero/tasty-tablet.webp 1x, ./images/hero/tasty-tablet@2x.webp 2x"
+        type="image/webp"
+      />
+
+      <source
+        srcset="./images/hero/tasty-tablet.png 1x, ./images/hero/tasty-tablet@2x.png 2x"
+        type="image/png"
+      />
+
+      <img class="tasty" src="./images/hero/tasty-tablet.png" alt="so tasty" />
+    </picture>
+  </div>
 </section>
 
-<!-- MOBiLE__HERO --> 
+<!-- MOBiLE__HERO -->
 <div class="mobile-hero js-hero-container">
-        <div class="hero-modal">
-            <button class="hero-modal--close js-close-hero" type="button">
-                <svg class="icon-modal--close">
-                    <use href="./images/icons.svg#icon-x"></use>
-                </svg>
-            </button>
+  <div class="hero-modal">
+    <button class="hero-modal--close js-close-hero" type="button">
+      <svg class="icon-modal--close">
+        <use href="./images/icons.svg#icon-x"></use>
+      </svg>
+    </button>
 
-            <p class="hero-modal__text section-subtitle">your dreams</p>
-            <p class="hero-modal__title section-title">come true here</p>
+    <p class="hero-modal__text section-subtitle">your dreams</p>
+    <p class="hero-modal__title section-title">come true here</p>
 
-<!-- ICECREAM FORM -->
+    <!-- ICECREAM FORM -->
 
-        <div class="box-img-icecream1">
-            <img class="img-icecream1" 
-            src="./images/hero/pic1-min.png" 
-            alt="ice cream">
- 
-            <img 
-             class="img-icecream1" 
-             src="./images/hero/pic2-min.png" 
-             alt="ice coffee">
- 
-             <img 
-             class="img-icecream1" 
-             src="./images/hero/pic3-min.png" 
-             alt="ice coffee">
-        </div>
+    <div class="box-img-icecream1">
+      <img class="img-icecream1" src="./images/hero/pic1-min.png" alt="ice cream" />
 
-        <form action="#" class="hero-form">
-                
-            <label 
-                class="hero-form__label hero-form__label--name" for="name">Enumeration
-                    <select 
-                    class="hero-form__select--name"
-                    id="name" 
-                    name="name">
-                    <option value="ic">ice cream</option>
-                    <option value="if">ice coffee</option>
-                    <option value="m" selected>milkshakes
-                    </option>
-                </select>  
-            </label>
-                         
-            <label class="hero-form__label hero-form__label--usname">
-                Your name
-                <textarea class="hero-form__text--usname" name="Your name" 
-                rows="1" 
-                placeholder="Djon...">
-            </textarea>
-            </label>   
+      <img class="img-icecream1" src="./images/hero/pic2-min.png" alt="ice coffee" />
 
-            <label 
-                class="hero-form__label hero-form__label--size" for="size">Size
-                <select 
-                class="hero-form__select--size"
-                id="size" 
-                name="size">
-                <option value="M">Medium</option>
-                <option value="L" selected>Large</option>
-                <option value="XL">eXtra Large</option>
-                </select>                
-            </label>
-        
-            <label class="hero-form__label hero-form__label--mail">
-                Phone number
-                <input 
-                class="hero-form__input--mail"
-                type="tel" 
-                name="phone" 
-                placeholder="(077)770-70-70...">
-            </label>
-            
-            <label class="hero-form__label hero-form__label--number">
-                Amount
-                <input 
-                class="hero-form__input--number" type="number" 
-                name="weight" 
-                min="1" 
-                max="10" 
-                step="1" 
-                value="1">
-            </label>          
-            
-            <label class="hero-form__label hero-form__label--mail">
-                Email
-                <input 
-                class="hero-form__input--mail" type="email" 
-                name="email" 
-                placeholder="Your@mail.com...">
-            </label>    
+      <img class="img-icecream1" src="./images/hero/pic3-min.png" alt="ice coffee" />
+    </div>
 
+    <form action="#" class="hero-form">
+      <label class="hero-form__label hero-form__label--name" for="name"
+        >Enumeration
+        <select class="hero-form__select--name" id="name" name="name">
+          <option value="ic">ice cream</option>
+          <option value="if">ice coffee</option>
+          <option value="m" selected>milkshakes</option>
+        </select>
+      </label>
 
-            <button class="btn btn-modal-form" type="submit">
-                Yum-yum!
-               </button>
-        </form>
+      <label class="hero-form__label hero-form__label--usname">
+        Your name
+        <textarea class="hero-form__text--usname" name="Your name" rows="1" placeholder="Djon...">
+        </textarea>
+      </label>
 
-           <picture>
-            <source srcset="./images/hero/click.webp" type="image/webp">
+      <label class="hero-form__label hero-form__label--size" for="size"
+        >Size
+        <select class="hero-form__select--size" id="size" name="size">
+          <option value="M">Medium</option>
+          <option value="L" selected>Large</option>
+          <option value="XL">eXtra Large</option>
+        </select>
+      </label>
 
-            <source srcset="./images/hero/click.png" type="image/png">
+      <label class="hero-form__label hero-form__label--mail">
+        Phone number
+        <input
+          class="hero-form__input--mail"
+          type="tel"
+          name="phone"
+          placeholder="(077)770-70-70..."
+        />
+      </label>
 
-            <img class="modal-click" 
-            src="./images/hero/click.png" 
-            alt="click">
-           </picture>    
-        </div>
-</div>    
+      <label class="hero-form__label hero-form__label--number">
+        Amount
+        <input
+          class="hero-form__input--number"
+          type="number"
+          name="weight"
+          min="1"
+          max="10"
+          step="1"
+          value="1"
+        />
+      </label>
+
+      <label class="hero-form__label hero-form__label--mail">
+        Email
+        <input
+          class="hero-form__input--mail"
+          type="email"
+          name="email"
+          placeholder="Your@mail.com..."
+        />
+      </label>
+
+      <button class="btn btn-modal-form" type="submit">Yum-yum!</button>
+    </form>
+
+    <picture>
+      <source srcset="./images/hero/click.webp" type="image/webp" />
+
+      <source srcset="./images/hero/click.png" type="image/png" />
+
+      <img class="modal-click" src="./images/hero/click.png" alt="click" />
+    </picture>
+  </div>
+</div>
 
 <!-- BUY____NOW -->
 <div class="mobile-buyN js-buy-container">
-    <div class="hero-modal-buyN">
-        <button class="hero-buyN--close js-close-buy" type="button">
-            <svg class="icon-buyN--close">
-                <use href="./images/icons.svg#icon-x"></use>
-            </svg>
-        </button>
+  <div class="hero-modal-buyN">
+    <button class="hero-buyN--close js-close-buy" type="button">
+      <svg class="icon-buyN--close">
+        <use href="./images/icons.svg#icon-x"></use>
+      </svg>
+    </button>
 
-        <p class="hero-buyN__text">your dreams</p>
-        <p class="hero-buyN__title">come true here</p>
+    <p class="hero-buyN__text">your dreams</p>
+    <p class="hero-buyN__title">come true here</p>
 
-        <div class="box-img-icecream1">
-            <img class="img-icecream1" 
-            src="./images/hero/pic1-min.png" 
-            alt="ice cream">
- 
-            <img 
-             class="img-icecream1" 
-             src="./images/hero/pic2-min.png" 
-             alt="ice coffee">
- 
-             <img 
-             class="img-icecream1" 
-             src="./images/hero/pic3-min.png" 
-             alt="ice coffee">
-        </div>
+    <div class="box-img-icecream1">
+      <img class="img-icecream1" src="./images/hero/pic1-min.png" alt="ice cream" />
 
-        <form action="#" class="hero-buyN">
-        
-            <label 
-                class="hero-buyN__label hero-buyN__label--name" for="namebuyN">Enumeration
-                    <select 
-                    class="hero-buyN__select--name"
-                    id="namebuyN" 
-                    name="name">
-                    <option value="ic">ice cream</option>
-                    <option value="if">ice coffee</option>
-                    <option value="m" selected>milkshakes
-                    </option>
-                </select>  
-            </label>
-                         
-            <label class="hero-buyN__label hero-buyN__label--usname">
-                Your name
-                <textarea class="hero-buyN__text--usname" name="Your name" 
-                rows="1" 
-                placeholder="Djon...">
-            </textarea>
-            </label>   
-    
-            <label 
-                class="hero-buyN__label hero-buyN__label--size" for="sizebuyN">Size
-                <select 
-                class="hero-buyN__select--size"
-                id="sizebuyN" 
-                name="size">
-                <option value="M">Medium</option>
-                <option value="L" selected>Large</option>
-                <option value="XL">eXtra Large</option>
-                </select>                
-            </label>
-        
-            <label class="hero-buyN__label hero-buyN__label--mail">
-                Phone number
-                <input 
-                class="hero-buyN__input--mail"
-                type="tel" 
-                name="phone" 
-                placeholder="(077)770-70-70...">
-            </label>
-            
-            <label class="hero-buyN__label hero-buyN__label--number">
-                Amount
-                <input 
-                class="hero-buyN__input--number" type="number" 
-                name="weight" 
-                min="1" 
-                max="10" 
-                step="1" 
-                value="1">
-            </label>          
-            
-            <label class="hero-buyN__label hero-buyN__label--mail">
-                Email
-                <input 
-                class="hero-buyN__input--mail" type="email" 
-                name="email" 
-                placeholder="Your@mail.com...">
-            </label>    
-    
-    
-            <button class="btn btn-modal-buyN" type="submit">
-                Yum-yum!
-               </button>
-        </form>
+      <img class="img-icecream1" src="./images/hero/pic2-min.png" alt="ice coffee" />
 
-        <picture>
-            <source srcset="./images/hero/click.webp" type="image/webp">
+      <img class="img-icecream1" src="./images/hero/pic3-min.png" alt="ice coffee" />
+    </div>
 
-            <source srcset="./images/hero/click.png" type="image/png">
+    <form action="#" class="hero-buyN">
+      <label class="hero-buyN__label hero-buyN__label--name" for="namebuyN"
+        >Enumeration
+        <select class="hero-buyN__select--name" id="namebuyN" name="name">
+          <option value="ic">ice cream</option>
+          <option value="if">ice coffee</option>
+          <option value="m" selected>milkshakes</option>
+        </select>
+      </label>
 
-            <img class="modal-click-buyN" 
-            src="./images/hero/click.png" 
-            alt="click">
-           </picture>   
-    </div>   
+      <label class="hero-buyN__label hero-buyN__label--usname">
+        Your name
+        <textarea class="hero-buyN__text--usname" name="Your name" rows="1" placeholder="Djon...">
+        </textarea>
+      </label>
+
+      <label class="hero-buyN__label hero-buyN__label--size" for="sizebuyN"
+        >Size
+        <select class="hero-buyN__select--size" id="sizebuyN" name="size">
+          <option value="M">Medium</option>
+          <option value="L" selected>Large</option>
+          <option value="XL">eXtra Large</option>
+        </select>
+      </label>
+
+      <label class="hero-buyN__label hero-buyN__label--mail">
+        Phone number
+        <input
+          class="hero-buyN__input--mail"
+          type="tel"
+          name="phone"
+          placeholder="(077)770-70-70..."
+        />
+      </label>
+
+      <label class="hero-buyN__label hero-buyN__label--number">
+        Amount
+        <input
+          class="hero-buyN__input--number"
+          type="number"
+          name="weight"
+          min="1"
+          max="10"
+          step="1"
+          value="1"
+        />
+      </label>
+
+      <label class="hero-buyN__label hero-buyN__label--mail">
+        Email
+        <input
+          class="hero-buyN__input--mail"
+          type="email"
+          name="email"
+          placeholder="Your@mail.com..."
+        />
+      </label>
+
+      <button class="btn btn-modal-buyN" type="submit">Yum-yum!</button>
+    </form>
+
+    <picture>
+      <source srcset="./images/hero/click.webp" type="image/webp" />
+
+      <source srcset="./images/hero/click.png" type="image/png" />
+
+      <img class="modal-click-buyN" src="./images/hero/click.png" alt="click" />
+    </picture>
+  </div>
 </div>
-
-
-
-
-
-
